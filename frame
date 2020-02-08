@@ -1,0 +1,18 @@
+<html >
+	<head>
+		<title><i>hello</i></title>
+
+	</head>
+<frameset cols="38%,40%,22%">
+<frame name="first" src="https://www.edhitch.com/login.html">
+
+<frame name="sec" src="https://www.wikipedia.org/">
+
+<frame name="thi" src="https://www.google.com/search?client=ubuntu&channel=fs&q=pics&ie=utf-8&oe=utf-8">
+
+<noframes>
+<body>none</body>
+</moframes>
+
+</frameset>
+</html>
