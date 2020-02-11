@@ -1,0 +1,63 @@
+<html>
+<body  leftmargin="200" bgcolor="pink" rightmargin="200">
+<img src="index.png" style="float:right">
+<h2>Sathwik M</h2>
+<br>
+<a href="abc">201710100795@presidencyuniversity.in</a>
+<p><u>+91 12548856</u></p>
+<br><br><br><br><br><br>
+<hr>
+<h3>CV Highlights</h3>
+<ul>
+<li>15 years’ experience working with 6th- through 8th-grade students.</li>
+<li>Created and implemented math enrichment curriculum for high-achieving students.</li>
+<li>Held lead math teacher position for 8 years.</li>
+</ul>
+<hr>
+<h3>Professional Experiance</h3>
+<ul>
+<li><b>Technical support</b></li>
+<ul>
+<li>answer coustomer quries over email</li>
+<li>Contribute ideas to the team on how customers can be delightes</li>
+</ul>
+</ul>
+<hr>
+<h3>Education Qualifications</h3>
+<table  border="1"  width="300" cellspacing="5" cellpadding="20">
+<tr>
+<th><b>Qualificatoins</b></th>
+<th><b>Board</b></th>
+<th><b>Percentage/Grades</b></th>
+<th><b>Year</b></th>
+</tr>
+<tr>
+<td>sslc</td>
+<td>state</td>
+<td>80%</td>
+<td>2015</td>
+</tr>
+<tr>
+<td>First PU</td>
+<td>Pre University</td>
+<td>79%</td>
+<td>2016</td>
+</tr>
+<tr>
+<td>Scond PU</td>
+<td>Pre University</td>
+<td>78%</td>
+<td>2017</td>
+</tr>
+</table>
+<hr>
+<h3>Independent Cources</h3>
+<ul>
+<li>HTML &amp; css</li>
+<li>Python</li>
+<li>JavaScript</li>
+</ul>
+<hr>
+
+<body>
+</html>
