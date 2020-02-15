@@ -1,29 +1,40 @@
 <html>
-<body  leftmargin="200" bgcolor="pink" rightmargin="200">
-<img src="index.png" style="float:right">
+<body  leftmargin="200" bgcolor=" #FF6F61" rightmargin="200">
+<div style="height: 200px;
+  width: 200px;
+  background-color:white;
+  float:right;border-radiu: 50%;">
+  <div style=" position: absolute;
+  top: 85px;
+  right: 275px;">
+  <p><b>PHOTO</b></p>
+</div>
+</div>
 <h2>Sathwik M</h2>
 <br>
 <a href="abc">201710100795@presidencyuniversity.in</a>
 <p><u>+91 12548856</u></p>
-<br><br><br><br><br><br>
+<br><br><br><br>
 <hr>
-<h3>CV Highlights</h3>
+<h3><u>CV Highlights</u></h3>
 <ul>
-<li>15 years’ experience working with 6th- through 8th-grade students.</li>
-<li>Created and implemented math enrichment curriculum for high-achieving students.</li>
-<li>Held lead math teacher position for 8 years.</li>
+<li>Currently going through Web Application Engineering.</li>
+<li>Learnt basic AdJava,HTML,CSS,JavaScript and C.</li>
+<li>An independent, dedicated, efficient person. These attributes are proved through the series of courses I have taken or I am taking as of now independently through online platforms.</li>
+ <li>Good Communication Skills, Presentation Skills, attitude towards leadership, authorisation and delegation, conflict resolution and negotiation and a very good team worker.</li>
 </ul>
 <hr>
-<h3>Professional Experiance</h3>
+<h3><u>Professional Experiance</u></h3>
 <ul>
 <li><b>Technical support</b></li>
 <ul>
-<li>answer coustomer quries over email</li>
+<li>Answer coustomer quries over email</li>
 <li>Contribute ideas to the team on how customers can be delightes</li>
+<li>Interact with our engineering team to get software issues and bugs resolved</li>
 </ul>
 </ul>
 <hr>
-<h3>Education Qualifications</h3>
+<h3><u>Education Qualifications</u></h3>
 <table  border="1"  width="300" cellspacing="5" cellpadding="20">
 <tr>
 <th><b>Qualificatoins</b></th>
@@ -51,12 +62,36 @@
 </tr>
 </table>
 <hr>
-<h3>Independent Cources</h3>
+<h3><u>Independent Cources</u></h3>
 <ul>
 <li>HTML &amp; css</li>
 <li>Python</li>
 <li>JavaScript</li>
 </ul>
+<hr>
+<h3><u>Technical Skills</u></h3>
+<ul>
+<li><b>Operating System:</b>DOS,Windows 2000,Windows 10,Linux(Ubuntu,Kali)</li>
+<li><b>Application Software:</b>Office,Excel</li>
+<li><b>Programminf Skills:</b>C,C++,HTML,CSS,AdJava,learning JavaScript</li>
+</ul>
+<hr>
+<h3><u>Personal Information</u></h3>
+<ul>
+<li>A young, determined hard and smart working person. I believe in task based roles and complete ownership of work.
+<li> <b>Languages Known:</b>Kannada, Hindi and English</li>
+<li><b>Hobbies :</b> Playing Chess, swimming, listening music, surfing Internet, self-learning through e-courses.</li>
+</ul>
+<hr>
+<h3><u>Other Information</u></h3>
+<ul>
+  <li><b>Expected Salary :</b>As per company standards</li>
+  <li><b>Area of Interest :</b>Start-ups,Coding App,Programming,Software Development,App Development,Technical Support </li>
+  <li><b>Joining Date:</b>Immediate</li>
+</ul>
+<hr>
+<h3><u>Declaration</u></h3>
+<p>I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief.</p>
 <hr>
 
 <body>
