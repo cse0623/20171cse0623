@@ -1,7 +1,17 @@
 
 body
-{
-background-image:url("abc.jpeg");background-repeat:no-repeat;background-attachment:fixed;}
-h1{ color:gold;margin-left:40px;}
-p{margin-left:40px; color:blue;}
-
+{background-image:url("abc.jpeg");background-repeat:no-repeat;background-attachment:fixed;}
+h1
+{ color:gold;margin-left:40px;}
+h2
+{font-family:serif;margin-left:300px;}
+p.normal
+{margin-left:300px; color:skyblue;font-style:italic;font-size:large;font-weight:bolder;word-spacing:5px;letter-spacing:5px;}
+p.xyz
+{color:gold;margin-left:300px;font-weight:bold;letter-spacing:5px;text-indent:1cm;text-align:center;text-decoration:overline;}
+p#s
+{text-decoration:line-through;color:green;text-transform:capitalize;}
+p#a
+{text-shadow:4px 4px 4px blue;color:red;}
+p#b
+{background-image:url("index.png");}
