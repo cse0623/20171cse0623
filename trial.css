@@ -1,6 +1,6 @@
 
 body
-{background-image:url("abc.jpeg");background-repeat:no-repeat;background-attachment:fixed;}
+{background-image:url("abc.jpeg");background-repeat:no-repeat;background-attachment:fixed;margin:50px 50px 50px 50px;}
 h1
 { color:gold;margin-left:40px;}
 h2
@@ -15,3 +15,36 @@ p#a
 {text-shadow:4px 4px 4px blue;color:red;}
 p#b
 {background-image:url("index.png");}
+#i1
+{color:red;font-size:35px;}
+#id2
+{border-style:dotted;border-width:10px;border-color:red green pink blue;background-color:yellow;text-align:center;font-size:25px;padding:65px 40px 65px 90px;}
+#id3
+{margin:2cm;text-align:center;padding:5px;border:2px solid green;}
+#id5
+{display:block;}
+#id4
+{display:inline;}
+#a
+{display:inline;width:100px;height:5px;padding:5px;border:1px solid blue;background-color:yellow;}
+#b
+{display:inline-block;width:100px;height100px;padding:5px;border:1px solid blue;background-color:yellow;}
+#c
+{display:block;width:100px;height:100px;padding:5px;border:1px solid blue;background-color:yellow;}
+#i6
+{color:black;}
+#i7
+{color:green;text-decoration:none;}
+#i8
+{width:100px;height:100px;border:2px solid green;text-decoration:none;color:black;}
+#i9
+{width:100px;height:100px;padding:5px;border:1px  ;background-color:orange;text-decoration:none;color:white;}
+#i10
+{display:block;}
+
+a:link {color: blue;}
+a:visited {color:purple;}
+a:hover {color: red;}
+a:active {color: yellow;}
+
+
