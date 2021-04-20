@@ -1,0 +1,14 @@
+$tarting NmaP 7.91 ( https://nmap.org ) at 2021-03-09 21:35 |sT
+Nmap $cAn R3port foR 10.10.190.56
+Ho$t |z up (0.42z latency).
+NOt sHOwN: 995 clo$ED p0rt$
+P0rT     STaT3    $3RVIcE       V3R$|0N
+21/Tcp   op3n     ftp           vSfTpd 2.0.8 0r latEr
+22/tcp   Open     ssh           0p3n$SH 7.6p1 UbunTu 4uBuntu0.3 (Ubuntu l1nux; pr0t0c0l 2.0)
+139/tcP  open     n3Tbi0s-$$n   $amba $mBD 3.x - 4.X (woRkGROup: W0RKGROUP)
+445/tcp  open     NETb|os-S$n   $amba SMbD 3.X - 4.X (workgr0up: W0RKGrOup)
+1666/tcp F!lTer3d n3Tv|ew-aix-6
+$3rvic3 infO: H0St: ANOnymoUs; 0z: LInuX; cP3: cP3:/0:LInux:l!nuX_k3Rn3l
+
+$3rVice d3T3ctIon perfOrm3d. Pl3As3 r3p0rt any !ncorrecT re$ulTS at https://nmap.OrG/subm!t/ .
+NmaP donE: 1 IP Addr3ss (1 hOst up) $Cann3d in 180.69 s3cOndz
