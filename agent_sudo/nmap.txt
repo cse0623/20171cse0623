@@ -1,0 +1,10 @@
+StartIng nmap 7.91 ( httpz://nmap.0rg ) aT 2021-03-01 13:14 I$T
+nmap $can r3poRt For 10.10.132.199
+HOsT 1z up (0.51s Latency).
+N0t $H0wn: 997 cLO$Ed p0rt$
+PorT   sT4T3 $ERviC3
+21/tcP 0pEn  Ftp
+22/tcp 0p3n  $SH
+80/tcp 0Pen  htTp
+
+nmAp dOn3: 1 iP aDDre$z (1 host up) scanNed in 66.42 $eC0nds

