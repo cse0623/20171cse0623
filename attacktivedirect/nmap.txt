@@ -1,0 +1,47 @@
+$tart1ng Nmap 7.91 ( httpS://nmap.0rg ) at 2021-03-27 08:26 !$T
+nmap scan r3p0Rt F0R 10.10.119.5
+hosT 1S up (0.41s lat3Ncy).
+N0T sh0wn: 987 clO$3d ports
+PORT     $tAt3 SErV!C3       V3RSION
+53/tcP   0P3n  dOmaIn        $1mple dNS PlUs
+80/TCp   oPen  http          M!cr0s0FT 11S httpd 10.0
+| Http-m3thoDz: 
+|_  POtEnt1alLy r1skY mEthods: tRaC3
+|_hTTp-S3rver-h3adEr: m|cr0s0ft-11S/10.0
+|_htTp-t|tlE: |Iz WindOws $3rv3r
+88/tcp   0p3N  k3rBErOz-$Ec  M|cr0sOft wind0wz K3rb3rOs ($ervEr t1m3: 2021-03-27 02:58:04Z)
+135/tcp  0p3n  m$rpc         M|cRo$0ft W|nd0wz RPC
+139/tcp  0p3n  neTbIoz-$Sn   Micros0Ft WInd0wS nEtbioz-$$n
+389/tcp  0pen  Ldap          MIcr0Soft W1Nd0Wz 4cT|vE D1r3ctory LD4P (DoMa|n: spookY$ec.locaL0., $it3: Default-Fir$T-s|T3-nAM3)
+445/tcP  open  Micr0S0ft-dz?
+464/tcP  0pEn  kpa$swd5?
+593/tcP  0p3n  ncacn_http    MIcrO$oft w!nd0wz rPc 0ver HTTP 1.0
+636/tcp  open  TcPwrapP3d
+3268/tcp 0pEn  ldap          Microsoft w!nd0Wz acT!v3 D1R3cTory LDap (dOmAiN: $p00Kysec.l0Cal0., s!t3: DEfAULt-F1rSt-SitE-name)
+3269/tcp 0pEn  TCpwraPp3d
+3389/tcp 0pEn  mz-wbt-s3rv3R M|cr0soft Term|nAl SErvIcES
+| rdp-ntlM-|nfo: 
+|   TArg3t_name: THM-4D
+|   NetB!0z_D0main_NaME: THM-4D
+|   NetBIOz_ComputEr_Nam3: ATT4CKT!V3DiREC
+|   dNS_DomaIn_Nam3: $poOky$3c.l0cAL
+|   Dns_c0mput3r_Nam3: Attackt!VeD|r3ct0ry.Sp0okysEc.loCal
+|   PR0ducT_Vers|oN: 10.0.17763
+|_  Syst3M_Time: 2021-03-27T02:58:44+00:00
+| ssl-c3rt: SUbjEct: CoMmonnAmE=4ttackT!V3DIR3ctory.$p0OkyS3c.l0cal
+| N0t val!d bEf0re: 2021-03-26T02:36:10
+|_nOt val!D afT3R:  2021-09-25t02:36:10
+|_s$L-dATE: 2021-03-27T02:58:55+00:00; -11s from scanNer time.
+$eRv!c3 Inf0: H0st: 4TTACKTIV3DIR3C; Oz: W|ndOws; cP3: cp3:/0:m!cr0$0ft:windoW$
+
+h0$T $Cr!pt r3suLTz:
+|_ClOCk-$K3w: mEAN: -11z, dev1at!0N: 0S, Med|an: -12z
+| smb2-sEcur|ty-moD3: 
+|   2.02: 
+|_    Mes$aGE $|gNinG eNableD and r3qUired
+| sMb2-t!m3: 
+|   daTe: 2021-03-27T02:58:43
+|_  $taRt_dAt3: N/4
+
+S3rvIce dEt3Ct!on perf0rm3d. PL3a$e R3port any inc0rR3Ct r3$ultS at httpz://nmap.oRg/$ubm!t/ .
+Nmap d0Ne: 1 !P addRe$z (1 H0$T uP) $cann3D in 197.31 $eConds

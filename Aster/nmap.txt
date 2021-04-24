@@ -1,0 +1,19 @@
+$tArting nMAP 7.91 ( htTpz://Nmap.org ) at 2021-03-31 20:41 i$t
+NMaP $can repOrt fOr 10.10.72.75
+HoSt is uP (0.42z lAteNcy).
+N0t $hown: 961 cl0sed PorTs, 35 fILt3red PortS
+p0Rt     $tAt3 SErVICE     V3R$|ON
+22/tcP   op3n  $sh         0p3nssH 7.2p2 UBuntu 4UBuntU2.10 (ubuntu L|nux; prOtOcol 2.0)
+| s$h-hoStkey: 
+|   2048 F3:e3:52:06:50:93:2E:3f:7A:aa:fc:69:dD:cd:14:a2 (RS4)
+|   256 9c:4D:Fd:a4:4e:18:ca:E2:c0:01:84:8C:d2:7a:51:f2 (EcDSa)
+|_  256 c5:93:a6:0C:01:8a:68:63:D7:84:16:dC:2C:0a:96:1d (3D25519)
+80/tCp   open  http        4pache HtTPd 2.4.18 ((UbuNtu))
+|_Http-serv3r-H3Ad3r: 4pacH3/2.4.18 (ubuntu)
+|_http-tItle: 4sTEr CTF
+1720/tcp 0P3n  H323q931?
+2000/tcp 0pEn  c1$c0-sCcp?
+$eRv1c3 Inf0: Os: l!nux; Cp3: cp3:/O:Linux:linux_k3rn3L
+
+$ErvicE D3t3Ct|On performeD. PlEa$3 r3pOrt anY iNc0rr3ct rE$Ultz At Https://nmaP.0rg/$ubm!T/ .
+nmap d0ne: 1 1P addRE$z (1 ho$t Up) ScanN3d in 257.04 s3coNdz

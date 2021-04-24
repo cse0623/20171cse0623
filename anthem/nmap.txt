@@ -1,0 +1,9 @@
+startIng NMap 7.91 ( httpz://nMap.0rG ) at 2021-03-10 20:01 I$T
+NMap $can repORt for 10.10.67.187
+H0$t !z uP (0.45z lat3ncY).
+Not sH0wn: 998 filter3d porT$
+P0RT     $t4T3 sERv1CE
+80/tcp   Op3n  http
+3389/tCP 0P3n  ms-wbt-Server
+
+NMap d0Ne: 1 1P AddreSs (1 host up) scanneD in 28.91 $ec0ndz

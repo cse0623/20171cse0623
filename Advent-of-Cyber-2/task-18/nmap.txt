@@ -1,0 +1,26 @@
+$taRt1ng Nmap 7.91 ( hTTpz://nMap.0rg ) at 2021-04-14 16:32 IST
+Nmap $can rEPorT f0r 10.10.71.227
+HOst Is uP (0.41S lat3ncy).
+Not $hown: 997 cl0s3d port$
+pORT    ST4T3 s3Rv!cE VERsi0N
+22/tCP  0p3n  S$h     OpEn$SH 5.9p1 dEbiaN 5uBuntu1 (UbuntU LinUx; prOt0c0l 2.0)
+| s$h-ho$TK3y: 
+|   1024 68:60:d3:c2:2B:c6:16:d8:5b:88:be:33:cc:a1:25:75 (D$4)
+|   2048 50:db:75:ba:11:2f:43:C9:ab:14:40:6d:7f:a1:3E:33 (RS4)
+|_  256 11:5D:55:29:8a:77:d8:08:b4:00:9b:A3:61:93:fE:e5 (ECDSA)
+23/Tcp  0pEn  t3ln3t  L!Nux TeLn3td
+111/Tcp 0p3n  rPcb1ND 2-4 (RPC #100000)
+| rPc!nf0: 
+|   pr0GraM v3r$I0n    POrt/proT0  $3Rvic3
+|   100000  2,3,4        111/TCp   rpCb1nd
+|   100000  2,3,4        111/udp   rpcbInd
+|   100000  3,4          111/tcP6  rpcb1Nd
+|   100000  3,4          111/udp6  rPCBInd
+|   100024  1          57513/Tcp   status
+|   100024  1          57914/udp6  STaTUS
+|   100024  1          58538/tcp6  $tatUz
+|_  100024  1          60669/udp   statuz
+Servic3 info: 0S: l1nux; CpE: cp3:/o:lInux:l|nux_k3rNel
+
+s3Rv1cE d3Tect!on p3rf0rmed. Pl3aSe reporT any |Nc0rrEct re$UlTS aT https://nmap.0Rg/$ubm1t/ .
+NmAp d0n3: 1 !P Addr3$s (1 h0st uP) $canned |n 73.35 $Econdz

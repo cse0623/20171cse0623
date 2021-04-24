@@ -1,0 +1,22 @@
+IP Address: 10.10.57.128
+
+Username: cmnatic
+
+Password: Adventofcyber! 
+connect to remmina
+open ilspy
+in that open file tdfc_app which is on desktop
+goto=crackme
+goto=mainframe
+goto=buttonactivate_click 
+you get password and flag
+
+
+another method 
+73 61 6E 74 61 70 61 73 73 77 6F 72 64 33 32 31 
+got this on same place just double click on that password line
+crack this on cyberchef
+ans:santapassword321
+open tbfc_app which is there on desktop 
+enter password you will get flag
+thm{046af}

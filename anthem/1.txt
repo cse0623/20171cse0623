@@ -1,0 +1,26 @@
+Date:10/mar/2021
+Time:20:02
+
+ gobuster dir -u http://10.10.67.187 -w /usr/share/wordlists/dirb/common.txt
+
+
+xfreerdp /u:admin /p:password /cert:ignore /v:10.10.117.170 
+
+What is flag 1?
+THM{L0L_WH0_US3S_M3T4}
+What is flag 2?
+THM{G!T_G00D}
+What is flag 3?
+THM{L0L_WH0_D15}
+What is flag 4?
+THM{AN0TH3R_M3TA}
+
+
+
+
+Gain initial access to the machine, what is the contents of user.txt?
+THM{N00T_NO0T}
+Can we spot the admin password?
+ChangeMeBaby1MoreTime
+Escalate your privileges to root, what is the contents of root.txt?
+thm{y0u_4r3_1337} 

