@@ -1,0 +1,10 @@
+$taRt|ng Nmap 7.91 ( hTtpz://nmap.orG ) At 2021-03-10 14:01 1$T
+NmaP $Can repoRT f0r 10.10.209.29
+HOst 1z Up (0.54s lAtency).
+N0t shOwN: 997 cLo$ed poRts
+PORT     $TaT3 s3RV1CE
+22/tCp   op3n  S$h
+80/tcp   0p3n  Http
+8000/tcp open  http-alt
+
+NMAp d0n3: 1 IP addrESz (1 h0$T up) scannEd IN 46.24 S3c0ndz

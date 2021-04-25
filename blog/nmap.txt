@@ -1,0 +1,44 @@
+$tartinG Nmap 7.91 ( httpz://nmap.Org ) at 2021-03-30 13:24 |$T
+nmap $can reP0rt f0r 10.10.65.190
+H0$t |s Up (0.44z lAtency).
+NoT $hoWN: 996 clo$3d p0RTs
+PORT    $t4T3 S3RVIC3     V3RS1ON
+22/tCp  OpEN  $$H         0p3nsSh 7.6p1 UBuntu 4ubuntu0.3 (UbuNtu L|nUx; pR0t0cOl 2.0)
+| s$h-h0$Tkey: 
+|   2048 57:8a:dA:90:ba:ed:3a:47:0c:05:a3:f7:A8:0a:8d:78 (R$A)
+|   256 c2:64:ef:ab:b1:9a:1c:87:58:7c:4B:d5:0f:20:46:26 (3CD$a)
+|_  256 5a:f2:62:92:11:83:ad:8a:9b:23:82:2D:ad:53:bc:16 (3D25519)
+80/TCp  op3n  httP        APach3 hTtpd 2.4.29 ((UBUnTu))
+|_http-g3nERaT0r: W0rdPRe$z 5.0
+| http-R0bOtz.Txt: 1 Di$aLLOwed 3nTry 
+|_/wp-adm1N/
+|_http-$ErvEr-header: 4pache/2.4.29 (Ubuntu)
+|_HttP-T1tle: B|lly J03L&#039;S !T Bl0g &#8211; The 1t blOg
+139/tcp 0pen  netbi0S-SSn $amba $Mbd 3.X - 4.X (wOrKGrouP: W0RkGROUp)
+445/tcp 0p3n  n3tb!OS-$$n samBa $mbD 4.7.6-UbuNTu (wORkgrouP: WoRKGR0UP)
+S3rv!cE Inf0: Host: BL0G; Oz: L|nux; CpE: Cp3:/0:linUx:l|nUX_kERn3l
+
+H0st $Cr!pt r3$ulTs:
+|_cl0ck-Skew: mean: 0S, devIat10n: 1z, medIan: 0s
+|_nBstat: N3tb|OS nAm3: BLOG, N3tBI0z User: <unkN0wn>, netBIOz M4C: <unKn0wn> (UnkNown)
+| $mb-0S-d|ScOvery: 
+|   0z: WinD0wz 6.1 ($AmBa 4.7.6-ubUntU)
+|   C0mputer NAm3: blog
+|   N3tBI0z c0mput3r nam3: BLOG\x00
+|   Doma|n namE: \x00
+|   FqDN: bl0g
+|_  $Y$t3m t1m3: 2021-03-30T07:55:50+00:00
+| $mb-$ecur|ty-moD3: 
+|   aCcoUNt_U$ED: guest
+|   aUThENticati0n_leV3L: U$3r
+|   chall3Ng3_re$pOn$3: SUpport3d
+|_  meS$ag3_siGning: diSabled (dang3R0uS, But dEfault)
+| smb2-$EcUr1tY-modE: 
+|   2.02: 
+|_    Me$SagE s1gnINg 3nabl3d buT n0t r3qu!red
+| SMb2-tim3: 
+|   dat3: 2021-03-30T07:55:50
+|_  start_dat3: N/A
+
+s3rv|ce dET3ct|on P3rf0RmEd. Pl3as3 r3p0rt anY IncOrrect r3sultz At htTpS://nMaP.Org/$Ubm!t/ .
+Nmap d0n3: 1 !P AddResz (1 hOst up) $cAnn3d in 95.12 s3conds

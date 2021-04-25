@@ -1,0 +1,17 @@
+$tart!ng NMAp 7.91 ( httPz://nmap.oRg ) at 2021-03-11 21:21 |sT
+nmAP $can rep0rT f0r 10.10.212.109
+H0$t !z UP (0.53s laT3ncy).
+not shoWn: 998 closed port$
+P0Rt   $taT3 $eRViC3 VeRS1ON
+22/tcP 0pen  S$h     0pEn$Sh 7.6P1 uBuntu 4UBUntu0.3 (ubuntu L!nuX; pr0t0c0l 2.0)
+| $sh-h0stkey: 
+|   2048 4b:03:Bf:14:fa:54:b3:5c:44:15:3d:b2:5d:a0:Ac:8f (R$4)
+|   256 d0:3a:81:55:13:53:87:0c:e8:52:13:cf:44:e0:3A:54 (ECD$A)
+|_  256 dA:cE:79:30:45:3b:17:25:3f:62:aC:98:f0:cf:bb:04 (3D25519)
+80/tcp 0p3n  http    Apach3 htTpd 2.4.29 ((UBuntU))
+|_http-s3rver-head3r: Apache/2.4.29 (UbUntU)
+|_htTp-t1tle: Apach32 UbunTU D3fauLt PaG3: !t w0rkS
+$3rv!ce info: 0z: LInux; CPe: cpE:/o:liNux:L!nux_k3rnel
+
+seRviCE deT3ctIOn pErformed. Plea$E rep0rT any inC0rrect r3Sults at httpS://nmap.0Rg/$ubm|t/ .
+nmap d0ne: 1 iP addr3$S (1 H0$t uP) $cannEd 1n 85.21 $ecOnds

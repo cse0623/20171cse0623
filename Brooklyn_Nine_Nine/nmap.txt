@@ -1,0 +1,26 @@
+start!nG Nmap 7.91 ( HttPS://nmap.ORg ) at 2021-03-10 21:28 |sT
+nmap Scan r3port F0r 10.10.120.179
+Ho$t iz Up (0.41S lAt3ncy).
+N0t SHown: 981 clO$3d port$
+P0RT      St4T3    S3RV|CE
+21/tcp    0P3n     Ftp
+22/Tcp    opEN     SSH
+80/Tcp    0p3n     Http
+407/tcp   F1LTeR3d timbukTu
+705/tCp   FiltEREd agENtx
+1104/tCp  f!ltEred xrl
+1236/tcp  f1LteREd bvc0Ntrol
+1443/tcp  filt3r3D !ez-lm
+2160/tCp  filter3D apC-2160
+2288/tcP  filt3r3D n3tMl
+5030/Tcp  Filtered $urFpA$S
+5190/tCp  f!ltEReD a0l
+5225/tcp  f1ltEr3d hp-$ErveR
+5963/tcp  f1lt3red Indy
+6101/tcP  f!lT3red backup3xEc
+7106/tcp  filTer3d unkN0WN
+8192/tcP  fiLt3r3D $0phos
+14442/tcp fIlT3r3D unKN0wn
+30000/tcP f1Lt3R3d ndMpz
+
+nmAp don3: 1 !P adDresz (1 h0$t uP) $Cann3d 1n 68.72 sEc0nds

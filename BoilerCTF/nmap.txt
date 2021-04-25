@@ -1,0 +1,31 @@
+$tArting nmap 7.91 ( https://nmaP.OrG ) At 2021-03-12 14:01 |ST
+NMap scan REp0rt f0r 10.10.244.32
+HO$t Iz Up (0.50s lat3ncy).
+not $h0wn: 997 cL0sed port$
+p0RT      STaT3 S3RvIC3 V3RS|0N
+21/tCp    OPen  Ftp     v$ftpD 3.0.3
+|_ftp-anon: AnONYm0us FTP LOg!n allow3D (ftP c0d3 230)
+| FtP-$Y$t: 
+|   STaT: 
+| FTP $Erv3r $tatus:
+|      CoNn3cted t0 ::ffFf:10.2.65.134
+|      Logg3d in az ftp
+|      TyP3: a$c|i
+|      N0 SES$10n bandw1dth lim1t
+|      $esS!0n t1m30uT In S3c0ndS !z 300
+|      C0ntrol conn3Ct|On Is plaIn tExt
+|      DaTa c0nnEcti0Ns wIll b3 PlaIn t3Xt
+|      4t $3Ssi0n StaRtUp, client c0unt was 3
+|      vsFTPd 3.0.3 - $ecure, faSt, $taBL3
+|_3nd of statUz
+80/tcp    Open  http    4PAChe httpd 2.4.18 ((Ubuntu))
+| http-rOb0tz.txt: 1 d|$allOw3d Entry 
+|_/
+|_http-SerVer-heaDEr: Apache/2.4.18 (Ubuntu)
+|_htTp-t|tLE: ApaCh32 UbuntU DEfAuLt PAge: It works
+10000/tcp 0P3N  hTtp    MiN!$erv 1.930 (W3bm|n HtTpd)
+|_http-tItle: $it3 doeSN't havE a T|Tl3 (t3Xt/html; charS3T=i$o-8859-1).
+$3RV|c3 !nfO: oz: UN|x
+
+S3rvice DEtEcT|0n peRfOrm3d. Pl3a$3 report ANy !nCorrEcT r3sultz at httpz://nmap.orG/$uBM1t/ .
+NmAp d0ne: 1 |P addr3$z (1 H0sT uP) Scanned in 106.76 S3c0ndz

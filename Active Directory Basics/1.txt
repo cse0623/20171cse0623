@@ -1,0 +1,197 @@
+Date:apr/25/2021
+Time sun 13:19:11
+
+Username: Administrator
+Password: password123@
+Domain: CONTROLLER.local
+
+do ssh
+controller\administrator@DOMAIN-CONTROLL C:\Users\Administrator>cd Downloads
+controller\administrator@DOMAIN-CONTROLL C:\Users\Administrator\Downloads>powershell -ep bypass
+PS C:\Users\Administrator\Downloads> . .\PowerView.Ps1
+PS C:\Users\Administrator\Downloads> Get-NetComputer -fulldata | select operatingsystem
+operatingsystem
+---------------
+Windows Server 2019 Standard
+Windows 10 Enterprise Evaluation
+Windows 10 Enterprise Evaluation
+
+PS C:\Users\Administrator\Downloads> get-netuser | select cncn
+--Administrator
+Guest
+krbtgt
+Machine-1
+Admin2
+Machine-2
+SQL 
+Service
+POST{P0W3RV13W_FTW}
+sshd
+
+
+PS C:\Users\Administrator\Downloads> net localgroup
+Aliases for \\DOMAIN-CONTROLL 
+
+------------------------------------------------------------------------------
+-
+*Access Control Assistance Operators
+*Account Operators
+*Administrators
+*Allowed RODC Password Replication Group
+*Backup Operators
+*Cert Publishers
+*Certificate Service DCOM Access
+*Cryptographic Operators
+*Denied RODC Password Replication Group
+*Distributed COM Users
+*DnsAdmins
+*Event Log Readers
+*Guests
+*Hyper-V Administrators
+*IIS_IUSRS
+*Incoming Forest Trust Builders
+*Network Configuration Operators
+*Performance Log Users
+*Performance Monitor Users
+*Pre-Windows 2000 Compatible Access
+*Print Operators
+*RAS and IAS Servers
+*RDS Endpoint Servers
+*RDS Management Servers
+*RDS Remote Access Servers
+*Remote Desktop Users
+*Remote Management Users
+*Replicator
+*Server Operators
+*Storage Replica Administrators
+*Terminal Server License Servers
+*Users
+*Windows Authorization Access Group
+The command completed successfully.
+
+
+PS C:\Users\Administrator\Downloads> Get-ADUser -identity SQLService -properti
+es *
+
+
+AccountExpirationDate                :
+accountExpires                       : 9223372036854775807
+AccountLockoutTime                   :
+AccountNotDelegated                  : False
+adminCount                           : 1
+AllowReversiblePasswordEncryption    : False
+AuthenticationPolicy                 : {}
+AuthenticationPolicySilo             : {}
+BadLogonCount                        : 0
+badPasswordTime                      : 0
+badPwdCount                          : 0
+CannotChangePassword                 : False
+CanonicalName                        : CONTROLLER.local/Users/SQL Service     
+Certificates                         : {}
+City                                 :
+CN                                   : SQL Service
+codePage                             : 0
+Company                              :
+CompoundIdentitySupported            : {}
+Country                              :
+countryCode                          : 0
+Created                              : 5/13/2020 8:26:57 PM
+createTimeStamp                      : 5/13/2020 8:26:57 PM
+Deleted                              :
+Department                           :
+Description                          : My password is MYpassword123#
+DisplayName                          : SQL Service
+DistinguishedName                    : CN=SQL Service,CN=Users,DC=CONTROLLER, 
+                                       DC=local
+Division                             :
+DoesNotRequirePreAuth                : False
+dSCorePropagationData                : {5/13/2020 8:29:56 PM, 12/31/1600      
+                                       4:00:00 PM}
+EmailAddress                         :
+EmployeeID                           :
+EmployeeNumber                       :
+Enabled                              : True
+Fax                                  :
+GivenName                            : SQL
+HomeDirectory                        :
+HomedirRequired                      : False
+HomeDrive                            :
+HomePage                             :
+HomePhone                            :
+Initials                             :
+instanceType                         : 4
+isDeleted                            :
+KerberosEncryptionType               : {}
+LastBadPasswordAttempt               :
+LastKnownParent                      :
+lastLogoff                           : 0
+lastLogon                            : 0
+LastLogonDate                        :
+LockedOut                            : False
+logonCount                           : 0
+LogonWorkstations                    :
+Manager                              :
+MemberOf                             : {CN=Group Policy Creator Owners,OU=Gro 
+                                       ups,DC=CONTROLLER,DC=local, CN=Domain  
+                                       Admins,OU=Groups,DC=CONTROLLER,DC=loca 
+                                       l, CN=Enterprise Admins,OU=Groups,DC=C 
+                                       ONTROLLER,DC=local, CN=Schema Admins,O 
+                                       U=Groups,DC=CONTROLLER,DC=local...} 
+MNSLogonAccount                      : False
+MobilePhone                          :
+Modified                             : 5/13/2020 8:42:53 PM
+modifyTimeStamp                      : 5/13/2020 8:42:53 PM
+msDS-User-Account-Control-Computed   : 0
+Name                                 : SQL Service
+nTSecurityDescriptor                 : System.DirectoryServices.ActiveDirecto 
+                                       rySecurity
+ObjectCategory                       : CN=Person,CN=Schema,CN=Configuration,D 
+                                       C=CONTROLLER,DC=local
+ObjectClass                          : user
+ObjectGUID                           : 1c3f20d7-c383-466a-9a67-92a774650cb8   
+objectSid                            : S-1-5-21-849420856-2351964222-98669616 
+                                       6-1107
+Office                               :
+OfficePhone                          :
+Organization                         :
+OtherName                            :
+PasswordExpired                      : False
+PasswordLastSet                      : 5/13/2020 8:26:58 PM
+PasswordNeverExpires                 : True
+PasswordNotRequired                  : False
+POBox                                :
+PostalCode                           :
+PrimaryGroup                         : CN=Domain
+                                       Users,OU=Groups,DC=CONTROLLER,DC=local 
+primaryGroupID                       : 513
+PrincipalsAllowedToDelegateToAccount : {}
+ProfilePath                          :
+ProtectedFromAccidentalDeletion      : False
+pwdLastSet                           : 132339004189467302
+SamAccountName                       : SQLService
+sAMAccountType                       : 805306368
+ScriptPath                           :
+sDRightsEffective                    : 15
+servicePrincipalName                 : {DOMAIN-CONTROLLER/SQLService.CONTROLL 
+                                       ER.local:60111}
+ServicePrincipalNames                : {DOMAIN-CONTROLLER/SQLService.CONTROLL 
+                                       ER.local:60111}
+SID                                  : S-1-5-21-849420856-2351964222-98669616 
+                                       6-1107
+SIDHistory                           : {}
+SmartcardLogonRequired               : False
+sn                                   : Service
+State                                :
+StreetAddress                        :
+Surname                              : Service
+Title                                :
+TrustedForDelegation                 : False
+TrustedToAuthForDelegation           : False
+UseDESKeyOnly                        : False
+userAccountControl                   : 66048
+userCertificate                      : {}
+UserPrincipalName                    : SQLService@CONTROLLER.local
+uSNChanged                           : 12890
+uSNCreated                           : 12820
+whenChanged                          : 5/13/2020 8:42:53 PM
+whenCreated                          : 5/13/2020 8:26:57 PM

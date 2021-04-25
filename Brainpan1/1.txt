@@ -1,0 +1,9 @@
+Date:19/Apr/2021
+Time:19:40
+
+└─$ python3 dirsearch.py -u 10.10.221.138                               127 ⨯
+└─$ gobuster dir -u http://10.10.221.138:10000 -w /usr/share/wordlists/dirb/common.txt
+http://10.10.221.138:10000/bin/
+└─$ wget http://10.10.221.138:10000/bin/brainpan.exe                      
+└─$ strings brainpan.exe                                                  3 ⚙
+shitstorm
