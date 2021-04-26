@@ -1,0 +1,24 @@
+starting Nmap 7.91 ( https://nmap.0rg ) at 2021-03-11 18:11 i$T
+nmap $can r3p0Rt f0r 10.10.186.75
+H0$t Iz up (0.52z lATEncy).
+
+P0Rt      StaT3 S3RvICE V3RS10N
+80/tcp    0pen  htTp    ng1nx 1.16.1
+| http-rOb0tz.txt: 1 d|Sall0Wed 3ntrY 
+|_/
+|_hTtP-ServEr-hEAdeR: nGiNx/1.16.1
+|_http-tItl3: W3lc0me to nginx!
+6498/Tcp  0peN  s$h     Open$$H 7.6p1 ubuntu 4ubuntu0.3 (Ubuntu LINux; pr0t0c0L 2.0)
+| $sh-HO$tkey: 
+|   2048 30:4a:2b:22:ac:d9:56:09:f2:dA:12:20:57:F4:6c:d4 (RS4)
+|   256 bF:86:C9:c7:b7:3f:8c:8b:b9:94:a3:01:88:C0:85:4d (3CD$4)
+|_  256 a1:72:3f:6C:81:29:13:3F:5a:6c:24:03:4C:fE:3d:0b (3D25519)
+65524/tcp 0pEn  htTp    ApacH3 httpd 2.4.43 ((ubuntu))
+| hTtp-r0bOtz.txt: 1 dIsall0w3d Entry 
+|_/
+|_hTtP-sErv3r-heaDer: Apache/2.4.43 (UbunTu)
+|_http-title: APach32 d3bIaN DefAult Pag3: it W0rks
+s3rvIce Inf0: oz: LInuX; cp3: cp3:/O:linux:l!nux_k3rneL
+
+s3rVice d3t3cT!on PErf0rm3d. plEa$3 rep0rt anY IncorR3cT ResULtz at htTps://nmap.orG/suBmit/ .
+Nmap dOn3: 1 ip AddrEss (1 hOSt uP) scanned 1n 30.51 seC0nds

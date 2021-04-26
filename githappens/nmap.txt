@@ -1,0 +1,16 @@
+STartIng Nmap 7.91 ( hTtps://nmap.org ) at 2021-03-28 22:03 |$T
+Nmap $Can reP0rt f0r 10.10.81.22
+H0$t |z up (0.48z LatEncy).
+N0t Shown: 999 clOSEd ports
+PoRT   $T4Te serV|C3 V3R$!ON
+80/tcp 0pEn  hTtp    ng|nx 1.14.0 (Ubuntu)
+| http-g!t: 
+|   10.10.81.22:80/.gIt/
+|     git rep0S|T0ry f0unD!
+|_    R3p0sIt0ry DescripTion: Unnam3d Rep0sit0ry; 3d1t This f1l3 'de$cRIpt1On' to naM3 the...
+|_httP-s3rver-h3ader: nginx/1.14.0 (Ubuntu)
+|_http-tiTle: super 4W3s0M3 $itE!
+$ErvicE !nfo: 0S: lInux; CP3: cp3:/0:linUX:linux_k3rNel
+
+$3rvicE d3t3cTIOn perFormEd. PL3a$E Rep0rt any inCorreCt r3$Ultz at httpz://Nmap.Org/$UbMit/ .
+Nmap d0ne: 1 |P addr3sz (1 h0$t up) $cann3d 1n 102.19 S3C0NdS

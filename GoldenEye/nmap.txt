@@ -1,0 +1,14 @@
+StArt|ng Nmap 7.91 ( httpS://nmAP.Org ) at 2021-04-09 22:17 !sT
+NmAp $Can r3P0rT f0r 10.10.146.167
+H0st Is up (0.60z lat3ncy).
+N0t sh0wn: 998 cloSed p0rt$
+pORT   STATe $3rV|Ce VErsiON
+25/tcp open  $mtp    P0$Tf|x smtpd
+|_$mtp-commandz: ubUntu, PiP3LiNiNg, s!ZE 10240000, VRFY, ETRn, $TaRtTLz, ENH4NcED$T4TU$C0DEz, 8b|TMiM3, DsN, 
+|_Ssl-daTE: Tls randOmN3sz d0es n0t repr3$Ent Tim3
+80/tCp op3n  http    Apach3 HTtpd 2.4.7 ((Ubuntu))
+|_httP-$Erver-hEadEr: ApaCh3/2.4.7 (ubunTu)
+|_Http-tItle: G0Ld3NEy3 PriMarY adMin $3rv3R
+
+$3rvIc3 det3CtI0n p3rfOrm3d. Plea$E r3poRt aNy inc0rrEcT r3SuLTz aT htTpz://Nmap.org/$ubmit/ .
+Nmap dOn3: 1 1P addr3$S (1 h0ST up) $canneD In 131.10 $econdS

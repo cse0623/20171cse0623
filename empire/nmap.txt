@@ -1,0 +1,16 @@
+$tart!ng NmAp 7.91 ( httpz://Nmap.0Rg ) at 2021-03-10 10:25 1sT
+NMaP Scan r3P0rt fOR 10.10.225.164
+HOST is up (0.42z lat3nCy).
+Not $H0wn: 991 ClosEd p0rT$
+P0RT      $T4TE SeRVICe
+135/TcP   opEn  msrpc
+139/tcp   Op3N  n3tb!0z-Ssn
+445/tcp   op3N  m1cRO$0ft-Dz
+3389/tCp  OP3n  mz-wbt-$erver
+49152/tCp Op3n  unknOwn
+49153/tcp OP3n  UNkn0wn
+49154/tcp Op3n  unknOwn
+49160/TcP OpEn  unknOwn
+49161/tcp opEn  unkn0Wn
+
+Nmap D0N3: 1 IP addr3$S (1 h0$t up) scanNED !N 74.60 $econdS
