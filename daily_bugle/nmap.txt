@@ -1,0 +1,10 @@
+Start|ng NMap 7.91 ( hTtpz://nmap.org ) at 2021-03-09 23:01 1ST
+nmap Scan r3p0rt fOR 10.10.5.80
+H0$t !z up (0.55z laTENcy).
+N0t Shown: 997 cL0$ed porT$
+p0RT     $T4T3 SeRV|C3
+22/tcp   op3n  S$H
+80/tcp   0p3n  http
+3306/tCp op3N  my$ql
+
+Nmap d0n3: 1 iP Address (1 ho$t up) $caNN3d !n 39.78 $econds

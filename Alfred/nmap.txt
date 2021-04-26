@@ -1,0 +1,6 @@
+Start!ng Nmap 7.91 ( Httpz://nMap.org ) at 2021-04-26 11:07 IST
+NmaP scan rEp0rt for 10.10.2.155
+Ho$t 1s UP.
+All 1000 Scann3D p0rtz 0n 10.10.2.155 ar3 fIlt3R3D
+
+Nmap dOnE: 1 !P addResS (1 h0$t up) $cannEd in 201.89 secondz

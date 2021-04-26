@@ -1,0 +1,7 @@
+Date:4/apr/2021
+Time:21:22
+
+└─$ gobuster dir -u http://10.10.70.7 -w /usr/share/wordlists/dirb/common.txt
+└─$ wget http://10.10.70.7/admin/archive.tar                        127 ⨯ 1 ⚙
+└─$ tar -xvf archive.tar                                                  1 ⚙
+

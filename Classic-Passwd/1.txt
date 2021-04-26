@@ -1,0 +1,15 @@
+Date:31/mar/2021
+Time:16:03
+
+└─$ chmod 700 Challenge.Challenge                                         6 ⚙
+└─$ file Challenge.Challenge                                              6 ⚙
+└─$ ltrace ./Challenge.Challenge                                          6 ⚙
+printf("Insert your username: ")               = 22
+__isoc99_scanf(0x56341a95601b, 0x7ffe6943a1a0, 0, 0Insert your username: likith
+found:AGB6js5d9dkG7
+
+└─$ ./Challenge.Challenge                                                 6 ⚙
+Insert your username: AGB6js5d9dkG7
+
+Welcome
+THM{65235128496}

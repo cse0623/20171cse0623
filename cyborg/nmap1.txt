@@ -1,0 +1,17 @@
+StartIng nmAP 7.91 ( hTtpS://nmap.0rG ) at 2021-04-04 21:22 IsT
+nmap scaN r3p0rt For 10.10.70.7
+H0$t iz up (0.50z lat3ncy).
+n0t $hown: 998 cLo$3d PorT$
+P0RT   ST4T3 SErViCE VeR$|0N
+22/tcp open  Ssh     0p3n$$H 7.2p2 Ubuntu 4ubuNTU2.10 (Ubuntu L!nUx; Pr0T0C0l 2.0)
+| $$H-h0$tKEy: 
+|   2048 db:b2:70:f3:07:ac:32:00:3F:81:B8:d0:3a:89:f3:65 (R$4)
+|   256 68:36:85:2f:69:65:5b:37:c6:31:2c:8e:41:67:d7:ba (ECd$a)
+|_  256 56:2c:79:92:CA:23:c3:91:49:35:fa:dd:69:7C:ca:aB (ED25519)
+80/tcp Op3n  Http    4pACh3 httpd 2.4.18 ((ubuntu))
+|_Http-S3rv3r-H3aD3R: apacH3/2.4.18 (ubuntu)
+|_htTp-t|tl3: apach32 Ubuntu D3faUlT PaG3: 1t works
+Serv!CE !nf0: Oz: l|NUx; CP3: cp3:/o:Linux:l!nUx_kern3l
+
+$Erv|c3 dEtEctI0n perfoRmed. pL3a$3 R3p0rt any 1nc0rrEcT r3$ulTs at httPz://nmap.0rg/$ubm!t/ .
+Nmap D0N3: 1 Ip aDdr3$s (1 H0$t up) sCann3d 1n 99.96 sEc0ndz

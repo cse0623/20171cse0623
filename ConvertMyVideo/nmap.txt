@@ -1,0 +1,17 @@
+$taRting NmaP 7.91 ( httPs://nmap.0rg ) at 2021-04-08 14:53 I$T
+nmaP Scan repORt F0r 10.10.243.48
+ho$t iz Up (0.46z lat3NCY).
+n0t $hown: 998 cl0$Ed p0rt$
+POrT   $TATE $3RVICE VERS!0N
+22/tcp 0pen  $$h     0pen$$H 7.6p1 ubuntu 4ubuntu0.3 (UBuntu l!nux; prot0c0L 2.0)
+| s$h-ho$tk3y: 
+|   2048 65:1b:fc:74:10:39:dF:dd:d0:2d:F0:53:1C:3b:6d:3c (RSA)
+|   256 C4:28:04:A5:c3:b9:6a:95:5a:4D:7A:6e:46:e2:14:db (ECD$4)
+|_  256 bA:07:bb:Cd:42:4a:f2:93:d1:05:d0:B3:4c:b1:d9:b1 (3D25519)
+80/tcP 0p3n  http    Apache Httpd 2.4.29 ((UbuntU))
+|_http-SErver-h3adeR: 4pachE/2.4.29 (Ubuntu)
+|_http-t!tLe: s|te doe$n't hAve a t!tle (text/htmL; chars3t=UTf-8).
+s3rv1ce |nfo: 0s: L1nux; CP3: Cp3:/o:l1nUx:lINux_kern3l
+
+S3rvIC3 d3T3ct|on perf0rm3d. PlEa$3 r3p0rt any 1ncorrEct r3sults aT https://nmap.org/$ubmit/ .
+NmAp done: 1 iP adDr3$s (1 h0st up) Scann3d IN 117.40 s3cOnDS

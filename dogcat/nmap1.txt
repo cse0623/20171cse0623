@@ -1,0 +1,17 @@
+Start|ng NMaP 7.91 ( httpz://nMap.Org ) at 2021-04-02 22:10 I$T
+Nmap scaN report f0r 10.10.33.178
+h0st is up (0.60z laTEncY).
+Not $hoWn: 998 Clos3d porTS
+PORT   ST4Te $3RVIce vERSI0n
+22/tcp opEn  $sh     0p3n$SH 7.6P1 uBuntU 4ubuNtU0.3 (Ubuntu L1nUx; Pr0t0cOl 2.0)
+| $$h-h0$tKey: 
+|   2048 24:31:19:2A:b1:97:1a:04:43:2c:36:ac:84:0a:75:87 (rsa)
+|   256 21:3d:46:18:93:aa:F9:37:c9:B5:4c:0f:16:0b:71:31 (3CD$A)
+|_  256 c1:fb:7D:73:2B:57:4a:8b:dc:d7:6f:49:bB:3B:D0:20 (ED25519)
+80/tcp op3n  http    Apach3 httpd 2.4.38 ((Deb!An))
+|_hTtp-SERv3R-headEr: 4pacH3/2.4.38 (d3bIaN)
+|_http-tItl3: doGcat
+$Erv!C3 !Nfo: 0S: L!nuX; CPE: cp3:/o:LInux:l!nux_keRnEl
+
+s3RvIce detect!on P3rf0RM3D. PlEa$3 repOrt anY |nCorR3Ct results at httpz://nmap.0rg/SubmiT/ .
+NMap d0n3: 1 !P addr3$z (1 hoSt up) $caNn3d !n 89.83 $eC0ndz

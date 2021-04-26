@@ -1,0 +1,10 @@
+$tart|Ng Nmap 7.91 ( httPz://NMap.org ) at 2021-03-11 11:33 I$T
+NMap $can report fOr 10.10.175.25
+H0$t |s up (0.46z Latency).
+NOt sh0Wn: 997 Clo$3d pOrtS
+PoRT   st4Te $3RvICe
+21/tcp Open  ftP
+22/Tcp 0pen  S$H
+80/tcp 0pen  http
+
+Nmap doN3: 1 |P addre$z (1 Host uP) $cAnNed in 6.02 s3c0ndz

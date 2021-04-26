@@ -1,0 +1,85 @@
+Date:2/mar/2021
+Time:13:44
+
+Task 1.................
+use cyberchef for all the answers to this tasks
+
+1]c4n y0u c4p7u23 7h3 f149?
+ans:can you capture the flag?
+
+2]01101100 01100101 01110100 01110011 00100000 01110100 01110010 01111001 00100000 01110011 01101111 01101101 01100101 00100000 01100010 01101001 01101110 01100001 01110010 01111001 00100000 01101111 01110101 01110100 00100001
+"binary"
+ans:lets try some binary out!
+
+3]MJQXGZJTGIQGS4ZAON2XAZLSEBRW63LNN5XCA2LOEBBVIRRHOM======
+  "base32"
+  ans:base32 is super common in CTF's
+  
+4]RWFjaCBCYXNlNjQgZGlnaXQgcmVwcmVzZW50cyBleGFjdGx5IDYgYml0cyBvZiBkYXRhLg==
+"base64 or magic"
+ans:Each Base64 digit represents exactly 6 bits of data.
+
+5]68 65 78 61 64 65 63 69 6d 61 6c 20 6f 72 20 62 61 73 65 31 36 3f
+"hex"
+ans:hexadecimal or base16?
+
+6]Ebgngr zr 13 cynprf!
+"rot13"
+ans:Rotate me 13 places!
+
+7]*@F DA:? >6 C:89E C@F?5 323J C:89E C@F?5 Wcf E:>6DX
+"rot47"
+ans:You spin me right round baby right round (47 times)
+
+8]
+- . .-.. . -.-. --- -- -- ..- -. .. -.-. .- - .. --- -.
+
+. -. -.-. --- -.. .. -. --.
+"morse code"
+ans: TELECOMMUNICATION  ENCODING 
+
+9]85 110 112 97 99 107 32 116 104 105 115 32 66 67 68
+"magic or decimal"
+ans:Unpack this BCD
+
+10]LS0tLS0gLi0tLS0gLi0tLS0gLS0tLS0gLS0tLS0gLi0tLS0gLi0tLS0gLS0tLS0KLS0tLS0gLi0tLS0gLi0tLS0gL
+S0tLS0gLS0tLS0gLi0tLS0gLS0tLS0gLi0tLS0KLS0tLS0gLS0tLS0gLi0tLS0gLS0tLS0gLS0tLS0gLS0tLS0gLS0tL
+S0gLS0tLS0KLS0tLS0gLi0tLS0gLi0tLS0gLS0tLS0gLS0tLS0gLS0tLS0gLS0tLS0gLS0tLS0KLS0tLS0gLi0tLS0gLS
+0tLS0gLi0tLS0gLi0tLS0gLi0tLS0gLi0tLS0gLi0tLS0KLS0tLS0gLi0tLS0gLi0tLS0gLS0tLS0gLS0tLS0gLS0tLS
+0gLS0tLS0gLS0tLS0KLS0tLS0gLS0tLS0gLi0tLS0gLS0tLS0gLS0tLS0gLS0tLS0gLS0tLS0gLS0tLS0KLS0tLS0gLi
+0tLS0gLi0tLS0gLS0tLS0gLS0tLS0gLS0tLS0gLS0tLS0gLS0tLS0KLS0tLS0gLi0tLS0gLi0tLS0gLS0tLS0gLS0tLS
+0gLS0tLS0gLS0tLS0gLS0tLS0KLS0tLS0gLi0tLS0gLi0tLS0gLS0tLS0gLS0tLS0gLi0tLS0gLS0tLS0gLi0tLS0KLS
+0tLS0gLS0tLS0gLi0tLS0gLS0tLS0gLS0tLS0gLS0tLS0gLS0tLS0gLS0tLS0KLS0tLS0gLi0tLS0gLi0tLS0gLS0tLS
+"base64,morse code, binary, rot41, decimal" 
+ans:Let's make this a bit trickier...
+
+
+Task 2............
+you need to install sonic visualiesr
+already downloaded the name is "SonicVisualiser-4.3-x86_64.AppImage"
+open SonicVisualiser-4.3-x86_64.AppImage
+step1:goto file and open 
+step2:goto layer and add_spectrogram
+step3:move the nobs on bottom right corner until u see a test message 
+ans:super secret message
+
+Task 3.........
+Download the jpg file
+run:steghide extract -sf  stegosteg.jpg
+passwd:[empty/blank]
+then you will get a txt file after entering passwd which is "steganopayload2248.txt"
+cat the "steganopayload2248.txt"
+ans:SpaghettiSteg
+
+
+Task 4.........
+Download the jpg file
+run:cat meme.jpg
+in this sometimes you will get answers 
+run:strings mem.jpg
+ans:hackerchat.png 
+ans:"AHH_YOU_FOUND_ME!"
+another method run:binwalk -e meme.jpg
+then you will get an folder check inside you may get some usefull content on id 
+byeeee
+ending time:14:34 and date:2/mar/2021
